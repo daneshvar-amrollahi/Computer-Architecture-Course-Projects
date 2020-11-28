@@ -1,0 +1,74 @@
+/home/daneshvar/Desktop/CA1/shReg.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/shReg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shreg_5b
+
+Top level modules:
+	shreg_5b
+
+} {} {}} /home/daneshvar/Desktop/CA1/mux2x1.v {2 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/mux2x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: /home/daneshvar/Desktop/CA1/mux2x1.v(1): (vlog-2283) Extra semicolon in $unit (global) scope.
+-- Compiling module mux_2_to_1
+
+Top level modules:
+	mux_2_to_1
+
+} {} {}} /home/daneshvar/Desktop/CA1/tb.v {2 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: /home/daneshvar/Desktop/CA1/tb.v(1): (vlog-2283) Extra semicolon in $unit (global) scope.
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} /home/daneshvar/Desktop/CA1/reg.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/reg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_5b
+
+Top level modules:
+	reg_5b
+
+} {} {}} /home/daneshvar/Desktop/CA1/booth5b.v {2 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/booth5b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: /home/daneshvar/Desktop/CA1/booth5b.v(1): (vlog-2283) Extra semicolon in $unit (global) scope.
+-- Compiling module booth5b
+
+Top level modules:
+	booth5b
+
+} {} {}} /home/daneshvar/Desktop/CA1/datapath.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dp
+
+Top level modules:
+	dp
+
+} {} {}} /home/daneshvar/Desktop/CA1/mux4x1.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/mux4x1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux4x1
+
+Top level modules:
+	mux4x1
+
+} {} {}} /home/daneshvar/Desktop/CA1/controller.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cu
+
+Top level modules:
+	cu
+
+} {} {}} /home/daneshvar/Desktop/CA1/adder.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} /home/daneshvar/Desktop/CA1/dff.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA1/dff.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}}

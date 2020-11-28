@@ -1,0 +1,192 @@
+# Loading project CA1
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# 9 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.tb
+# vsim work.tb 
+# Start time: 14:25:50 on Nov 12,2020
+# Loading work.tb
+# Loading work.booth5b
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/MUT File: /home/daneshvar/Desktop/CA1/booth5b.v
+# Loading work.dp
+# Loading work.adder
+# Loading work.shreg_5b
+# Loading work.dff
+# Loading work.mux4x1
+# Loading work.reg_5b
+# Loading work.mux_2_to_1
+# Loading work.cu
+# Error loading design
+# End time: 14:25:51 on Nov 12,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Load canceled
+vsim work.tb
+# vsim work.tb 
+# Start time: 14:26:26 on Nov 12,2020
+# Loading work.tb
+# Loading work.booth5b
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/MUT File: /home/daneshvar/Desktop/CA1/booth5b.v
+# Loading work.dp
+# Loading work.adder
+# Loading work.shreg_5b
+# Loading work.dff
+# Loading work.mux4x1
+# Loading work.reg_5b
+# Loading work.mux_2_to_1
+# Loading work.cu
+# Error loading design
+# End time: 14:26:27 on Nov 12,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# Compile of tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim work.tb
+# vsim work.tb 
+# Start time: 14:26:59 on Nov 12,2020
+# Loading work.tb
+# Loading work.booth5b
+# Loading work.dp
+# Loading work.adder
+# Loading work.shreg_5b
+# Loading work.dff
+# Loading work.mux4x1
+# Loading work.reg_5b
+# Loading work.mux_2_to_1
+# Loading work.cu
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/CA1/datapath.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'sclr'. The port definition is at: /home/daneshvar/Desktop/CA1/shReg.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MUT/DP/Xreg File: /home/daneshvar/Desktop/CA1/shReg.v
+add wave sim:/tb/*
+run -all
+# ** Note: $stop    : /home/daneshvar/Desktop/CA1/booth5b.v(88)
+#    Time: 2 us  Iteration: 0  Instance: /tb
+# Break in Module tb at /home/daneshvar/Desktop/CA1/booth5b.v line 88
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# Compile of tb.v was successful with warnings.
+# 10 compiles, 0 failed with no errors.
+vsim work.tb
+# End time: 15:02:24 on Nov 12,2020, Elapsed time: 0:35:25
+# Errors: 0, Warnings: 1
+# vsim work.tb 
+# Start time: 15:02:24 on Nov 12,2020
+# Loading work.tb
+# Loading work.booth5b
+# Loading work.dp
+# Loading work.adder
+# Loading work.shreg_5b
+# Loading work.dff
+# Loading work.mux4x1
+# Loading work.reg_5b
+# Loading work.mux_2_to_1
+# Loading work.cu
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/CA1/datapath.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'sclr'. The port definition is at: /home/daneshvar/Desktop/CA1/shReg.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MUT/DP/Xreg File: /home/daneshvar/Desktop/CA1/shReg.v
+add wave sim:/tb/*
+run -all
+# ** Note: $stop    : /home/daneshvar/Desktop/CA1/tb.v(73)
+#    Time: 2 us  Iteration: 0  Instance: /tb
+# Break in Module tb at /home/daneshvar/Desktop/CA1/tb.v line 73
+# Compile of adder.v was successful.
+# Compile of datapath.v was successful.
+# Compile of dff.v was successful.
+# Compile of mux4x1.v was successful.
+# Compile of reg.v was successful.
+# Compile of shReg.v was successful.
+# Compile of mux2x1.v was successful with warnings.
+# Compile of controller.v was successful.
+# Compile of booth5b.v was successful with warnings.
+# Compile of tb.v was successful with warnings.
+# 10 compiles, 0 failed with no errors.
+# Load canceled
+vsim work.tb
+# End time: 15:22:57 on Nov 12,2020, Elapsed time: 0:20:33
+# Errors: 1, Warnings: 1
+# vsim work.tb 
+# Start time: 15:22:57 on Nov 12,2020
+# Loading work.tb
+# Loading work.booth5b
+# Loading work.dp
+# Loading work.adder
+# Loading work.shreg_5b
+# Loading work.dff
+# Loading work.mux4x1
+# Loading work.reg_5b
+# Loading work.mux_2_to_1
+# Loading work.cu
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/CA1/datapath.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'sclr'. The port definition is at: /home/daneshvar/Desktop/CA1/shReg.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /tb/MUT/DP/Xreg File: /home/daneshvar/Desktop/CA1/shReg.v
+add wave sim:/tb/*
+run -all
+# ** Note: $stop    : /home/daneshvar/Desktop/CA1/tb.v(73)
+#    Time: 2 us  Iteration: 0  Instance: /tb
+# Break in Module tb at /home/daneshvar/Desktop/CA1/tb.v line 73
+# End time: 15:23:36 on Nov 12,2020, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 1

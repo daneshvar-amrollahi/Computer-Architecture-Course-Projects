@@ -1,0 +1,241 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/daneshvar/intelFPGA/16.1/modelsim_ase/linuxaloem
+vadder
+Z0 !s110 1605181962
+!i10b 1
+!s100 MG14DXOk>zC_H0N_6QSN00
+IEeS1L8lP@YKKNDYW8COXH3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/home/daneshvar/Desktop/CA1
+w1605172656
+8/home/daneshvar/Desktop/CA1/adder.v
+F/home/daneshvar/Desktop/CA1/adder.v
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1605181962.000000
+!s107 /home/daneshvar/Desktop/CA1/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbooth5b
+R0
+!i10b 1
+!s100 W_G=>^ZjSH>LkdF5NR=@52
+I3mi_LgnIhE7J1O6dYSnT51
+R1
+R2
+w1605180717
+8/home/daneshvar/Desktop/CA1/booth5b.v
+F/home/daneshvar/Desktop/CA1/booth5b.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/booth5b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/booth5b.v|
+!i113 1
+R5
+R6
+vcontroller
+!s110 1604846255
+!i10b 1
+!s100 4AlnFJInDa>O^=M0b=]P]2
+I9MD]jZDE5X6Oa;K4b66Kk0
+R1
+R2
+w1604846193
+Z7 8/home/daneshvar/Desktop/CA1/controller.v
+Z8 F/home/daneshvar/Desktop/CA1/controller.v
+L0 23
+R3
+r1
+!s85 0
+31
+!s108 1604846255.000000
+Z9 !s107 /home/daneshvar/Desktop/CA1/controller.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/controller.v|
+!i113 1
+R5
+R6
+vcu
+R0
+!i10b 1
+!s100 kjdSPiY35:FhPWF8e53B_3
+IAJCUIPclDYKH0WADIbTX10
+R1
+R2
+w1605177756
+R7
+R8
+L0 19
+R3
+r1
+!s85 0
+31
+R4
+R9
+R10
+!i113 1
+R5
+R6
+vdff
+R0
+!i10b 1
+!s100 M>RjO9B5ez`V4=PdWW0Q43
+I?ZhPQn3jelV`]OQo`Okzj0
+R1
+R2
+w1605172640
+8/home/daneshvar/Desktop/CA1/dff.v
+F/home/daneshvar/Desktop/CA1/dff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/dff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/dff.v|
+!i113 1
+R5
+R6
+vdp
+R0
+!i10b 1
+!s100 foUTo?Yh5`E@LVffjNUgK1
+IdYNlndnRWPh[D7B[mjFLY3
+R1
+R2
+w1605177540
+8/home/daneshvar/Desktop/CA1/datapath.v
+F/home/daneshvar/Desktop/CA1/datapath.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/datapath.v|
+!i113 1
+R5
+R6
+vmux4x1
+R0
+!i10b 1
+!s100 imeXkoMPNHc1@UK9fhK@e0
+Ig`:EedHTL3;E^8[S2nS7j0
+R1
+R2
+w1605172613
+8/home/daneshvar/Desktop/CA1/mux4x1.v
+F/home/daneshvar/Desktop/CA1/mux4x1.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/mux4x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/mux4x1.v|
+!i113 1
+R5
+R6
+vmux_2_to_1
+R0
+!i10b 1
+!s100 =8nF9>[3AQX6nSXfe4XmN0
+IV_l5>[@ajKfKWAZ]@Z8XP1
+R1
+R2
+w1605172634
+8/home/daneshvar/Desktop/CA1/mux2x1.v
+F/home/daneshvar/Desktop/CA1/mux2x1.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/mux2x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/mux2x1.v|
+!i113 1
+R5
+R6
+vreg_5b
+R0
+!i10b 1
+!s100 Q^1>MIZgKfUUVhdN0e;og3
+I>SmAkM7?Sjn8el`Bo`2^90
+R1
+R2
+w1605172616
+8/home/daneshvar/Desktop/CA1/reg.v
+F/home/daneshvar/Desktop/CA1/reg.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/reg.v|
+!i113 1
+R5
+R6
+vshreg_5b
+R0
+!i10b 1
+!s100 <SJ`X_5<TfDLC?9VEdzN_3
+In8lAO1@Lc4bO<<W38aHOf0
+R1
+R2
+w1605172621
+8/home/daneshvar/Desktop/CA1/shReg.v
+F/home/daneshvar/Desktop/CA1/shReg.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/shReg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/shReg.v|
+!i113 1
+R5
+R6
+vtb
+R0
+!i10b 1
+!s100 9zZDFNX[;[1Kl=;OJR6@l0
+IzKjnZ3dnU>7EWeV7o:`HX2
+R1
+R2
+w1605180959
+8/home/daneshvar/Desktop/CA1/tb.v
+F/home/daneshvar/Desktop/CA1/tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/daneshvar/Desktop/CA1/tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA1/tb.v|
+!i113 1
+R5
+R6
