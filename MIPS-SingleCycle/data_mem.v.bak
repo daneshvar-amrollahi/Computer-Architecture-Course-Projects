@@ -1,0 +1,112 @@
+/*module data_mem (adr, d_in, mrd, mwr, clk, d_out, min_idx, min);
+  input [31:0] adr;
+  input [31:0] d_in;
+  input mrd, mwr, clk;
+  output [31:0] d_out;
+output [31:0] min;
+output [31:0] min_idx;
+  
+  reg [31:0] mem[0:65535];
+  
+  initial
+  begin
+{mem[1003], mem[1002], mem[1001], mem[1000]} = 32'd22;
+{mem[1007], mem[1006], mem[1005], mem[1004]} = 32'd58;
+{mem[1011], mem[1010], mem[1009], mem[1008]} = 32'd63;
+{mem[1015], mem[1014], mem[1013], mem[1012]} = 32'd18;
+{mem[1019], mem[1018], mem[1017], mem[1016]} = 32'd50;
+{mem[1023], mem[1022], mem[1021], mem[1020]} = 32'd51;
+{mem[1027], mem[1026], mem[1025], mem[1024]} = 32'd27;
+{mem[1031], mem[1030], mem[1029], mem[1028]} = 32'd74;
+{mem[1035], mem[1034], mem[1033], mem[1032]} = 32'd81;
+{mem[1039], mem[1038], mem[1037], mem[1036]} = 32'd88;
+{mem[1043], mem[1042], mem[1041], mem[1040]} = 32'd9;
+{mem[1047], mem[1046], mem[1045], mem[1044]} = 32'd35;
+{mem[1051], mem[1050], mem[1049], mem[1048]} = 32'd8;
+{mem[1055], mem[1054], mem[1053], mem[1052]} = 32'd17;
+{mem[1059], mem[1058], mem[1057], mem[1056]} = 32'd69;
+{mem[1063], mem[1062], mem[1061], mem[1060]} = 32'd55;
+{mem[1067], mem[1066], mem[1065], mem[1064]} = 32'd35;
+{mem[1071], mem[1070], mem[1069], mem[1068]} = 32'd44;
+{mem[1075], mem[1074], mem[1073], mem[1072]} = 32'd24;
+{mem[1079], mem[1078], mem[1077], mem[1076]} = 32'd100;
+  end
+  
+  
+  // The following initial block is for TEST PURPOSE ONLY 
+  initial
+    #500 $display("The content of mem[1012] = %d", {mem[1015], mem[1014], mem[1013], mem[1012]});
+  
+  always @(posedge clk)
+    if (mwr==1'b1)
+      {mem[adr+3], mem[adr+2], mem[adr+1], mem[adr]} = d_in;
+  
+  assign min = {mem[2003], mem[2002], mem[2001], mem[2000]};
+	
+  assign min_idx = {mem[2007], mem[2006], mem[2005], mem[2004]};
+  assign d_out = (mrd==1'b1) ? {mem[adr+3], mem[adr+2], mem[adr+1], mem[adr]} : 32'd0;
+  
+endmodule   
+*/
+
+module data_mem (adr, d_in, mrd, mwr, clk, d_out, min, min_idx);
+  input [31:0] adr;
+  input [31:0] d_in;
+  input mrd, mwr, clk;
+  output [31:0] d_out;
+  
+  reg [31:0] mem[0:65535];
+
+  output [31:0] min_idx, min;
+  
+  initial
+  begin
+    /*
+    {mem[103], mem[102], mem[101], mem[100]} = 32'd0;
+    {mem[107], mem[106], mem[105], mem[104]} = 32'd1;
+    {mem[111], mem[110], mem[109], mem[108]} = 32'd2;
+    {mem[115], mem[114], mem[113], mem[112]} = 32'd3;
+    {mem[119], mem[118], mem[117], mem[116]} = 32'd4;    
+    {mem[123], mem[122], mem[121], mem[120]} = 32'd5;
+    */
+    {mem[1003], mem[1002], mem[1001], mem[1000]} = 32'd22;
+{mem[1007], mem[1006], mem[1005], mem[1004]} = 32'd58;
+{mem[1011], mem[1010], mem[1009], mem[1008]} = 32'd63;
+{mem[1015], mem[1014], mem[1013], mem[1012]} = 32'd18;
+{mem[1019], mem[1018], mem[1017], mem[1016]} = 32'd50;
+{mem[1023], mem[1022], mem[1021], mem[1020]} = 32'd51;
+{mem[1027], mem[1026], mem[1025], mem[1024]} = 32'd27;
+{mem[1031], mem[1030], mem[1029], mem[1028]} = 32'd74;
+{mem[1035], mem[1034], mem[1033], mem[1032]} = 32'd81;
+{mem[1039], mem[1038], mem[1037], mem[1036]} = 32'd88;
+{mem[1043], mem[1042], mem[1041], mem[1040]} = 32'd9;
+{mem[1047], mem[1046], mem[1045], mem[1044]} = 32'd35;
+{mem[1051], mem[1050], mem[1049], mem[1048]} = 32'd8;
+{mem[1055], mem[1054], mem[1053], mem[1052]} = 32'd17;
+{mem[1059], mem[1058], mem[1057], mem[1056]} = 32'd69;
+{mem[1063], mem[1062], mem[1061], mem[1060]} = 32'd55;
+{mem[1067], mem[1066], mem[1065], mem[1064]} = 32'd35;
+{mem[1071], mem[1070], mem[1069], mem[1068]} = 32'd44;
+{mem[1075], mem[1074], mem[1073], mem[1072]} = 32'd24;
+{mem[1079], mem[1078], mem[1077], mem[1076]} = 32'd100;
+  end
+  
+  
+  // The following initial block is for TEST PURPOSE ONLY 
+  initial begin
+    #5000 
+      $display("The content of mem[2000] = %d", {mem[2003], mem[2002], mem[2001], mem[2000]});
+      $display("Khooneye avvale array = %d", {mem[1007], mem[1006], mem[1005], mem[1004]});
+	end
+  
+  always @(posedge clk)
+    if (mwr==1'b1)
+      {mem[adr+3], mem[adr+2], mem[adr+1], mem[adr]} = d_in;
+  
+  assign d_out = (mrd==1'b1) ? {mem[adr+3], mem[adr+2], mem[adr+1], mem[adr]} : 32'd0;
+  
+
+  assign min = {mem[2003], mem[2002], mem[2001], mem[2000]};
+	
+  assign min_idx = {mem[2007], mem[2006], mem[2005], mem[2004]};
+endmodule   

@@ -1,0 +1,120 @@
+/home/daneshvar/Desktop/CA2/mips_tb.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/mips_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}} /home/daneshvar/Desktop/CA2/mux2to1_32b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/mux2to1_32b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2to1_32b
+
+Top level modules:
+	mux2to1_32b
+
+} {} {}} /home/daneshvar/Desktop/CA2/mux2to1_5b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/mux2to1_5b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2to1_5b
+
+Top level modules:
+	mux2to1_5b
+
+} {} {}} /home/daneshvar/Desktop/CA2/mux3to1_5b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/mux3to1_5b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux3to1_5b
+
+Top level modules:
+	mux3to1_5b
+
+} {} {}} /home/daneshvar/Desktop/CA2/shl2.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/shl2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shl2
+
+Top level modules:
+	shl2
+
+} {} {}} /home/daneshvar/Desktop/CA2/mips_single_cycle.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/mips_single_cycle.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mips_single_cycle
+
+Top level modules:
+	mips_single_cycle
+
+} {} {}} /home/daneshvar/Desktop/CA2/shl2_26b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/shl2_26b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shl2_26b
+
+Top level modules:
+	shl2_26b
+
+} {} {}} /home/daneshvar/Desktop/CA2/alu.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/alu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} /home/daneshvar/Desktop/CA2/sign_ext_10b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/sign_ext_10b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sign_ext_10b
+
+Top level modules:
+	sign_ext_10b
+
+} {} {}} /home/daneshvar/Desktop/CA2/controller.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} /home/daneshvar/Desktop/CA2/reg_32b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/reg_32b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_32b
+
+Top level modules:
+	reg_32b
+
+} {} {}} /home/daneshvar/Desktop/CA2/reg_file.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/reg_file.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} /home/daneshvar/Desktop/CA2/alu_controller.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/alu_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} /home/daneshvar/Desktop/CA2/adder_32b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/adder_32b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder_32b
+
+Top level modules:
+	adder_32b
+
+} {} {}} /home/daneshvar/Desktop/CA2/datapath.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/datapath.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} /home/daneshvar/Desktop/CA2/mux3to1_32b.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/mux3to1_32b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux3to1_32b
+
+Top level modules:
+	mux3to1_32b
+
+} {} {}} /home/daneshvar/Desktop/CA2/sign_ext.v {1 {vlog -work work -stats=none /home/daneshvar/Desktop/CA2/sign_ext.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sign_ext
+
+Top level modules:
+	sign_ext
+
+} {} {}}
