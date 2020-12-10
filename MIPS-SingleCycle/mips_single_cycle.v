@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module mips_single_cycle (rst,
                           clk,
                           inst_adr,
@@ -20,16 +21,16 @@ module mips_single_cycle (rst,
     
     //our signals
     wire [1:0] reg_dst;
-    wire  jr, jmp,slti;
+    wire  jr, jmp;
     wire [1:0] data_to_write;
     
     datapath DP(  clk, rst, inst_adr, inst, data_adr, data_out, data_in,
     reg_dst, mem_to_reg, alu_src, pc_src, alu_ctrl, reg_write, zero,
-    data_to_write, jr, jmp, slti
+    data_to_write, jr, jmp
     );
     
     controller CU(  inst[31:26], inst[5:0], zero, reg_dst, mem_to_reg, reg_write,
-    alu_src, mem_read, mem_write, pc_src, alu_ctrl,data_to_write, jr, jmp, slti
+    alu_src, mem_read, mem_write, pc_src, alu_ctrl,data_to_write, jr, jmp
     );
     
 endmodule

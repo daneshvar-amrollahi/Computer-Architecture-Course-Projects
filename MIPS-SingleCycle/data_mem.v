@@ -1,4 +1,5 @@
 
+`timescale 1ns/1ns;
 module data_mem (adr,
                  d_in,
                  mrd,

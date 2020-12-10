@@ -13,6 +13,8 @@ module alu_controller (alu_op,
             operation = 3'b010;
         else if (alu_op == 2'b01)   // beq
             operation = 3'b110;
+        else if (alu_op == 2'b11)
+            operation = 3'b111; //slti
         else
         begin
             case (func)

@@ -4,14 +4,14 @@ module inst_mem (adr,
     input [31:0] adr;
     output [31:0] d_out;
     
-    //reg [31:0] mem[0:65535]; works with instructions20.mem
+    //reg [31:0] mem[0:65535]; works with inst20_32b.mem
     reg [7:0] mem[0:65535]; //works with inst20_8b.mem 
 
     initial
     begin
         
         $readmemb("inst20_8b.mem", mem);
-        //$readmemb("instructionsSLTi.mem", mem);
+        //$readmemb("instSLTi_8b.mem", mem);
         //$readmemb("instructionsJR.mem", mem);
     end
     
