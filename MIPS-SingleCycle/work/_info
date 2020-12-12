@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/home/daneshvar/Desktop/Computer Architecture/MIPS-SingleCycle
 vadder_32b
-Z0 !s110 1607638597
+Z0 !s110 1607765000
 !i10b 1
 !s100 =lT4LQS`YHiSO0CCXY`3J1
 ICT[HcEDPfJU2^zB?6IR0T2
@@ -23,12 +23,12 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1607638597.000000
+!s108 1607764999.000000
 !s107 /home/daneshvar/Desktop/CA2/adder_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/adder_32b.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 valu
 R0
 !i10b 1
@@ -44,12 +44,12 @@ R3
 r1
 !s85 0
 31
-R4
+Z6 !s108 1607765000.000000
 !s107 /home/daneshvar/Desktop/CA2/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/alu.v|
 !i113 1
+R4
 R5
-R6
 valu_controller
 R0
 !i10b 1
@@ -65,20 +65,20 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/alu_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/alu_controller.v|
 !i113 1
+R4
 R5
-R6
 vcontroller
 R0
 !i10b 1
-!s100 OcU<B?bG?;52GO]dLnhzM1
-IbY<o_@D1jOF74[mB==OHg2
+!s100 5I12bUm9^FVaWRXahcozg0
+IcOnAokTV6n3cd<KTAE[_B2
 R1
 R2
-w1607635728
+w1607704033
 8/home/daneshvar/Desktop/CA2/controller.v
 F/home/daneshvar/Desktop/CA2/controller.v
 L0 1
@@ -86,12 +86,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/controller.v|
 !i113 1
+R4
 R5
-R6
 vdata_mem
 R0
 !i10b 1
@@ -107,12 +107,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/data_mem.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/data_mem.v|
 !i113 1
+R4
 R5
-R6
 vdatapath
 R0
 !i10b 1
@@ -120,7 +120,7 @@ R0
 II<e]o<W0i2;>m=@T?zI=f0
 R1
 R2
-w1607634926
+w1607761874
 8/home/daneshvar/Desktop/CA2/datapath.v
 F/home/daneshvar/Desktop/CA2/datapath.v
 L0 1
@@ -128,12 +128,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/datapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/datapath.v|
 !i113 1
+R4
 R5
-R6
 vinst_mem
 R0
 !i10b 1
@@ -149,12 +149,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/inst_mem.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/inst_mem.v|
 !i113 1
+R4
 R5
-R6
 vmips_single_cycle
 R0
 !i10b 1
@@ -170,12 +170,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/mips_single_cycle.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/mips_single_cycle.v|
 !i113 1
+R4
 R5
-R6
 vmips_tb
 R0
 !i10b 1
@@ -191,12 +191,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/mips_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/mips_tb.v|
 !i113 1
+R4
 R5
-R6
 vmux2to1_32b
 R0
 !i10b 1
@@ -212,12 +212,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/mux2to1_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/mux2to1_32b.v|
 !i113 1
+R4
 R5
-R6
 vmux2to1_5b
 R0
 !i10b 1
@@ -233,12 +233,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/mux2to1_5b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/mux2to1_5b.v|
 !i113 1
+R4
 R5
-R6
 vmux3to1_32b
 R0
 !i10b 1
@@ -254,12 +254,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/mux3to1_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/mux3to1_32b.v|
 !i113 1
+R4
 R5
-R6
 vmux3to1_5b
 R0
 !i10b 1
@@ -275,12 +275,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/mux3to1_5b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/mux3to1_5b.v|
 !i113 1
+R4
 R5
-R6
 vreg_32b
 R0
 !i10b 1
@@ -296,12 +296,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/reg_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/reg_32b.v|
 !i113 1
+R4
 R5
-R6
 vreg_file
 R0
 !i10b 1
@@ -317,12 +317,12 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/reg_file.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/reg_file.v|
 !i113 1
+R4
 R5
-R6
 vshl2
 R0
 !i10b 1
@@ -338,14 +338,14 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/shl2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/shl2.v|
 !i113 1
+R4
 R5
-R6
 vshl2_26b
-Z7 !s110 1607638598
+R0
 !i10b 1
 !s100 5_^jDlE<W?fOg=5n=mnP53
 IizBa^Kha2@NiV_lT>i?bI1
@@ -359,14 +359,14 @@ R3
 r1
 !s85 0
 31
-R4
+R6
 !s107 /home/daneshvar/Desktop/CA2/shl2_26b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/shl2_26b.v|
 !i113 1
+R4
 R5
-R6
 vsign_ext
-R7
+R0
 !i10b 1
 !s100 Co;>B>RBIc8eMKYF0i1622
 Ih8_XUaSb6=ELnZOzND=]n2
@@ -380,14 +380,14 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1607638598.000000
+R6
 !s107 /home/daneshvar/Desktop/CA2/sign_ext.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/sign_ext.v|
 !i113 1
+R4
 R5
-R6
 vsign_ext_10b
-R7
+R0
 !i10b 1
 !s100 hRSVF8gf7D^d[Yn6VU=fS2
 I3YCOHOQJzJ8^aTo23hk>`3
@@ -401,9 +401,9 @@ R3
 r1
 !s85 0
 31
-R8
+R6
 !s107 /home/daneshvar/Desktop/CA2/sign_ext_10b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/CA2/sign_ext_10b.v|
 !i113 1
+R4
 R5
-R6

@@ -37,25 +37,29 @@ module controller (opcode,
         case (opcode)
             // RType instructions
             6'b000000 : {reg_dst, reg_write, alu_op} = {2'b01, 3'b110};
+
             // Load Word (lw) instruction
             6'b100011 : {alu_src, mem_to_reg, reg_write, mem_read} = 4'b1111;
+            
             // Store Word (sw) instruction
             6'b101011 : {alu_src, mem_write} = 2'b11;
+
             // Branch on equal (beq) instruction
             6'b000100 : {branch, alu_op} = 3'b101;
+            
             // Add immediate (addi) instruction
             6'b001001: {reg_write, alu_src} = 2'b11;
             
-            //jump
+            // Jump (j) instruction
             6'b000010: {jmp} = 1'b1;
             
-            //jal
+            // Jump and link (jal) instruction
             6'b000011: {reg_dst, data_to_write, jmp} = {2'b10, 2'b01, 1'b1};
             
-            //jr
+            // Jump Register (JR) instruction
             6'b000110: {jr, jmp} = {2'b11};
             
-            //SLTi
+            // Set Less Than immediate (SLTi) instruction
             6'b001010: {reg_write, alu_src, alu_op,data_to_write} = {1'b1, 1'b1, 2'b11, 2'b10};
         endcase
     end

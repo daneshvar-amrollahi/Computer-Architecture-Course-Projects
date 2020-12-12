@@ -46,18 +46,18 @@ input [1:0] data_to_write,reg_dst;
 
   adder_32b ADDER_1 (pc_out , 32'd4, 1'b0, , adder1_out);
 	
-//modifying MUX_1 
+  //modifying MUX_1 
   mux3to1_5b MUX_1(inst[20:16], inst[15:11], 5'b11111, reg_dst, mux1_out);
 
 	//adding mux5 for writeData in RF
 	mux3to1_32b MUX_5(mux4_out,  adder1_out, alu_out, data_to_write, mux5_out);
 	
-//set writeData input to mux5_out;
+  //set writeData input to mux5_out;
   reg_file  RF(mux5_out, inst[25:21], inst[20:16], mux1_out, reg_write, rst, clk, read_data1, read_data2);
 
   sign_ext SGN_EXT(inst[15:0], sgn_ext_out);
 
-  mux2to1_32b MUX_2(read_data2, sgn_ext_out , alu_src, mux2_out); //prev input: sgn_ext_out
+  mux2to1_32b MUX_2(read_data2, sgn_ext_out , alu_src, mux2_out); 
 
   alu ALU(read_data1, mux2_out, alu_ctrl, alu_out, zero);
 
@@ -85,8 +85,8 @@ input [1:0] data_to_write,reg_dst;
 	//mux2to1_32b MUX_8(sgn_ext_out, sgn_ext_10_out, slti, mux8_out);
 	
 
-  assign inst_adr = pc_out; //meghdari ke bayad write beshe tooye inst_memory
-  assign data_adr = alu_out;  //address e oonjayi az data_memory ke bayad toosh write beshe
-  assign data_out = read_data2; //meghdari ke bayad write beshe tooye data_memory
+  assign inst_adr = pc_out; 
+  assign data_adr = alu_out;  //Address in data_memory where data should be written
+  assign data_out = read_data2; //Value that should be written in data_memory
   
 endmodule
