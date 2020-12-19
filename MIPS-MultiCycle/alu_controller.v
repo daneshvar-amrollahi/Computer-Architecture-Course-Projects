@@ -22,7 +22,7 @@ module alu_controller (alu_op,
                 6'b100011: operation = 3'b110;  // sub
                 6'b100100: operation = 3'b000;  // and
                 6'b100101: operation = 3'b001;  // or
-                6'b101010: operation = 3'b111;  // slt & slti
+                6'b101010: operation = 3'b111;  // slt 
                 default:   operation = 3'b000;
             endcase
         end

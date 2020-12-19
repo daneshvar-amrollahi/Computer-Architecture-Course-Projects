@@ -15,11 +15,21 @@
 `define   S14     4'b1110
 `define   S15     4'b1111
 
+`define J       6'b000010
+`define JAL     6'b000011
+`define SLTI    6'b001010
+`define JR      6'b000110
+`define ADDI    6'b001001
+`define BEQ     6'b000100
+`define RTYPE   6'b000000
+`define LW      6'b100011
+`define SW      6'b101011
 
-module controller (opcode, //coming from inst (output of datapath) (wire konid tooye MIPS ...)
-                   func, ////coming from inst (output of datapath) (wire konid toyoe MIPS - 5:0)
-                   zero_out, //wire beshe be zero_in be dp (baraye beq)
-                   zero_in, //wire beshe be zero_out az dp (baraye pc_load)
+
+module controller (opcode,        //coming from inst (output of datapath) (wire konid tooye MIPS ...)
+                   func,          ////coming from inst (output of datapath) (wire konid toyoe MIPS - 5:0)
+                   zero_out,      //wire beshe be zero_in be dp (baraye beq)
+                   zero_in,       //wire beshe be zero_out az dp (baraye pc_load)
                    reg_dst,
                    mem_to_reg,
                    reg_write,
@@ -33,9 +43,8 @@ module controller (opcode, //coming from inst (output of datapath) (wire konid t
                    ir_write,
                    alu_src_a,
                    alu_src_b,
-                   clk
-                   rst);
-
+                   clk rst);
+    
     output zero_out;
     input zero_in;
     output pc_write, pc_write_cond, IorD, ir_write, alu_src_a;
@@ -45,7 +54,7 @@ module controller (opcode, //coming from inst (output of datapath) (wire konid t
     input [5:0] func;
     output  mem_to_reg, reg_write, alu_src, mem_read, mem_write, pc_src;
     output [1:0] pc_src;
-
+    
     reg mem_to_reg, reg_write, mem_read, mem_write;
     output [2:0] operation;
     
@@ -56,34 +65,51 @@ module controller (opcode, //coming from inst (output of datapath) (wire konid t
     alu_controller ALU_CTRL(alu_op, func, operation);
     
     reg[3:0] ps, ns;
-  
-	always @(posedge clk)
-	begin
-			if (rst)
-				ps <= `S0;
-			else
-				ps <= ns;
-	end
-
+    
+    always @(posedge clk)
+    begin
+        if (rst)
+            ps <= `S0;
+        else
+            ps <= ns;
+    end
+    
     always @(ps, opcode)
-	begin
-		case (ps)
-			`S0:  ns = start ? `S1 : `S0;
-			`S1:  ns = `S2;
-			`S2:  ns = `S3;
-			`S3:  ns = `S4;
-			`S4:  ns = `S5;
-			`S5:  ns =`S6 ;
-			`S6:  ns = `S7;
-			`S7:  ns = `S8;
-			`S8:  ns =`S9;
-			`S9:  ns =`S10;
-			`S10: ns = `S11;
-			`S11: ns =`S12;
-			`S12: ns = `S13;
-			`S13: ns = `S14;
-			`S14: ns = `S15;
-			`S15: ns = `S0;
-		endcase
- 	end
+    begin
+        case (ps)
+            `S0:  ns = `S1;
+            `S1:    opcode == `J    ?   ns = `S9:
+                    opcode == `BEQ  ?   ns = `S8;
+                    opcode == `RTYPE?   ns = `S6:
+                    opcode == `LW   ?   ns = `S2:
+                    opcode == `SW   ?   ns = `S2:
+                    opcode == `JAL  ?   ns = `S10:
+                    opcode == `JR   ?   ns = `S12:
+                    opcode == `SLTI ?   ns = `S13;
+                    ns = `S1; //baghiasho badan minveisim
+
+            `S2:    opcode == `LW   ?   ns = `S3:
+                                        ns = `S5;
+
+                    
+            `S3:  ns = `S4;
+            `S4:  ns = `S0;
+            `S5:  ns = `S0;
+            `S6:  ns = `S7;
+            `S7:  ns = `S0;
+            `S8:  ns = `S0;
+            `S9:  ns = `S0;
+            
+            `S10: ns = `S11;
+            `S11: ns = `S0;
+
+            `S12: ns = `S0;
+
+            `S13: ns = `S14;
+            `S14: ns = `S0;
+
+            `S15: ns = `S0;
+            
+        endcase
+    end
 endmodule
