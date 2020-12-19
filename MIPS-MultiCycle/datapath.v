@@ -15,7 +15,8 @@ module datapath (clk,
                  IorD,
                  pc_write,
                  pc_write_cond,
-                 ir_write);
+                 ir_write
+                 inst);
     
     input  clk, rst;
     output [31:0] data_to_mem;
@@ -26,6 +27,7 @@ module datapath (clk,
     intput [1:0] pc_src;
     input  [2:0] alu_ctrl;
     output adr_to_write[31:0];
+    output [31:0] inst;
     
     wire [31:0] pc_out;
     wire [31:0] read_data1, read_data2;
@@ -78,4 +80,8 @@ module datapath (clk,
     mux4to1_32b MUX6(alu_out, {pc_out[31:28], shl2_26_out}, aluout_out, a_out, pc_src, mux6_out);
 
     assign adr_to_write = mux1_out;
+
+    assign data_to_mem = b_out;
+
+    assign inst = ir_out;
 endmodule
