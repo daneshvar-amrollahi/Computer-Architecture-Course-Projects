@@ -14,7 +14,7 @@
 `define   S13     5'b01101
 `define   S14     5'b01110
 `define   S15     5'b01111
-`define   S16     5'b01111
+`define   S16     5'b10000
 
 `define J       6'b000010
 `define JAL     6'b000011

@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/home/daneshvar/Desktop/CA2
 valu
-Z0 !s110 1608404776
+Z0 !s110 1608406999
 !i10b 1
 !s100 CVjX85SUfWY7Io1bQU2eC2
 I>M4XdYLXAWb>_UHAl@fmZ3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1608404776.000000
+Z4 !s108 1608406999.000000
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v|
 !i113 1
@@ -53,11 +53,11 @@ R6
 vcontroller
 R0
 !i10b 1
-!s100 QSA]E[7N:?8c::@hSEdRz0
-I?:H>:iFGh@6h@lQ_fT0@H0
+!s100 2Mf33U6;?Z]edC;P98?La0
+IBUDS^I`6hoB>lJgWBlkbQ3
 R1
 R2
-w1608384071
+w1608406641
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v
 L0 30
@@ -95,11 +95,11 @@ R6
 vmemory
 R0
 !i10b 1
-!s100 ZT]IWo3fG`_S[fb?_VALM1
-IGQILS05cA9kf;31mQgX8L2
+!s100 :`^UzRRTo`7`EJRHfeG[I3
+IHNYDb`bCW=B7K0TMjfRiH0
 R1
 R2
-w1608404774
+w1608406012
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v
 L0 2

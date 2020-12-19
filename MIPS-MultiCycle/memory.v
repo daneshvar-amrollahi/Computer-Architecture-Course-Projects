@@ -21,7 +21,7 @@ module memory(adr,
         $display("Second number is %d", {mem[1004+3], mem[1004+2], mem[1004+1], mem[1004]});
         $display("index 2000 is %d", {mem[2000+3], mem[2000+2], mem[2000+1], mem[2000]});
         $display("index 2004 is %d", {mem[2004+3], mem[2004+2], mem[2004+1], mem[2004]});
-        $readmemb("test.mem", mem);
+        $readmemb("instMIN20.mem", mem);
     end
     
     assign d_out = (mrd == 1'b1) ? {mem[adr+3], mem[adr+2], mem[adr+1], mem[adr]} : 32'd0;
