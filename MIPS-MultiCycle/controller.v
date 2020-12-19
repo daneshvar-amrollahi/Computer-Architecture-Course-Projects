@@ -79,19 +79,27 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
     begin
         case (ps)
             `S0:  ns = `S1;
-
-            `S1: (opcode == `J)? ns = `S9:   
-            opcode == `BEQ  ?   ns = `S8:
-            opcode == `RTYPE?   ns = `S6:
-            opcode == `LW   ?   ns = `S2:
-            opcode == `SW   ?   ns = `S2:
-            opcode == `JAL  ?   ns = `S10:
-            opcode == `JR   ?   ns = `S12:
-            opcode == `SLTI ?   ns = `S13:
-            ns = `S15; //ADDI
             
-            `S2:    (opcode == `LW)?   ns = `S3:
-            ns = `S5;
+            `S1: begin
+                case(opcode)
+                    `J:  ns       = `S9;
+                    `BEQ:    ns   = `S8;
+                    `RTYPE:    ns = `S6;
+                    `LW:     ns   = `S2;
+                    `SW:      ns  = `S2;
+                    `JAL:    ns   = `S10;
+                    `JR:    ns    = `S12;
+                    `SLTI:  ns    = `S13;
+                    
+                    default:ns = `S15; //ADDI
+                endcase
+            end
+            `S2: begin
+                case(opcode)
+                    `LW: ns    = `S3;
+                    default:ns = `S5;
+                endcase
+            end
             
             
             `S3:  ns = `S4;
@@ -149,13 +157,13 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
             `S13:   {alu_src_b, alu_src_a, alu_op} = {2'b10, 1'b1, 2'b11}; //shorooe SLTI
             
             `S14:   {reg_write} = {1'b1}; //etmaame SLTI
-
+            
             `S15:   {alu_src_a, alu_src_b} = {1'b1, 2'b10};
-
+            
             `S16:   {reg_write} = {1'b1};
         endcase
     end
-
+    
     assign zero_out = zero_in;
     
 endmodule

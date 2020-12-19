@@ -1,0 +1,107 @@
+{/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux4to1_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux4to1_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux4to1_32b
+
+Top level modules:
+	mux4to1_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_26b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_26b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shl2_26b
+
+Top level modules:
+	shl2_26b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_32b
+
+Top level modules:
+	reg_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_file.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_file.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu_controller.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu_controller.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/datapath.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/datapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sign_ext
+
+Top level modules:
+	sign_ext
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_multi_cycle.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_multi_cycle.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mips_multi_cycle
+
+Top level modules:
+	mips_multi_cycle
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v} {2 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(1): (vlog-2283) Extra semicolon in $unit (global) scope.
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_5b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_5b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2to1_5b
+
+Top level modules:
+	mux2to1_5b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2to1_32b
+
+Top level modules:
+	mux2to1_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shl2_32b
+
+Top level modules:
+	shl2_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux3to1_5b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux3to1_5b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux3to1_5b
+
+Top level modules:
+	mux3to1_5b
+
+} {} {}}
