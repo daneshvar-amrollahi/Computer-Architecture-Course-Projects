@@ -1,4 +1,4 @@
-module shl2 (d_in,
+module shl2_32b(d_in,
              d_out);
     input [31:0] d_in;
     output [31:0] d_out;
