@@ -11,7 +11,7 @@ module memory(adr,
     input [31:0] d_in;
     input mrd, mwr, clk;
     output [31:0] d_out;
-    output two_thousand, two_thousand_four;
+    output [31:0] two_thousand, two_thousand_four;
     reg [7:0] mem[0:65535]; 
     
     initial

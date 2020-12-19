@@ -65,7 +65,7 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
     
     alu_controller ALU_CTRL(alu_op, func, operation);
     
-    reg[3:0] ps, ns;
+    reg[4:0] ps, ns;
     
     always @(posedge clk)
     begin

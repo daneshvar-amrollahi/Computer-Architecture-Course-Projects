@@ -19,6 +19,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	alu
 
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module controller
+
+Top level modules:
+	controller
+
 } {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module reg_32b
@@ -46,13 +53,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	datapath
-
-} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module memory
-
-Top level modules:
-	memory
 
 } {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

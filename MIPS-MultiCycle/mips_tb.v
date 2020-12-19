@@ -15,15 +15,15 @@ module mips_tb();
                         .adr_to_write(adr_to_write)); //az dp be mem
     
     
-    wire two_thousand, two_thousand_four;
+    wire [31:0] min, min_idx;
     memory MEMORY(.adr(adr_to_write),
                  .d_in(data_to_mem),
                  .mrd(mem_read),
                  .mwr(mem_write),
                  .clk(clk),
                  .d_out(mem),
-                 .two_thousand(two_thousand),
-                 .two_thousand_four(two_thousand_four));
+                 .two_thousand(min),
+                 .two_thousand_four(min_idx));
 
     
     
@@ -32,7 +32,7 @@ module mips_tb();
         rst     = 1'b1;
         clk     = 1'b0;
         #20 rst = 1'b0;
-        #5000 $stop;
+        #20000 $stop;
     end
     
     always
