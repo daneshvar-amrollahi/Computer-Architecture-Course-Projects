@@ -56,8 +56,7 @@ module mips_multi_cycle(clk,
     .IorD(IorD),
     .pc_write(pc_write),
     .pc_write_cond(pc_write_cond),
-    .ir_write(ir_write)
+    .ir_write(ir_write),
     .inst(inst));
-    )
 
-}
+endmodule

@@ -48,7 +48,7 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
                    rst);
     
     output zero_out;
-    input zero_in;
+    input zero_in, clk, rst;
     output reg pc_write, pc_write_cond, IorD, ir_write, alu_src_a;
     output reg [1:0] alu_src_b;
     
@@ -79,8 +79,9 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
     begin
         case (ps)
             `S0:  ns = `S1;
-            `S1:    opcode == `J    ?   ns = `S9:
-            opcode == `BEQ  ?   ns = `S8;
+
+            `S1: (opcode == `J)? ns = `S9:   
+            opcode == `BEQ  ?   ns = `S8:
             opcode == `RTYPE?   ns = `S6:
             opcode == `LW   ?   ns = `S2:
             opcode == `SW   ?   ns = `S2:
@@ -89,7 +90,7 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
             opcode == `SLTI ?   ns = `S13:
             ns = `S15; //ADDI
             
-            `S2:    opcode == `LW   ?   ns = `S3:
+            `S2:    (opcode == `LW)?   ns = `S3:
             ns = `S5;
             
             

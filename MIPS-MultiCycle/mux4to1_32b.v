@@ -11,7 +11,7 @@ module mux4to1_32b (i0,
     
     assign y = (sel == 2'b00) ? i0:
     (sel == 2'b01) ? i1:
-    (Sel == 2'b10) ? i2:
+    (sel == 2'b10) ? i2:
     i3;
     
 endmodule

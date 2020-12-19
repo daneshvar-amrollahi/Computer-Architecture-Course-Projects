@@ -15,7 +15,7 @@ module datapath (clk,
                  IorD,
                  pc_write,
                  pc_write_cond,
-                 ir_write
+                 ir_write,
                  inst);
     
     input  clk, rst;
@@ -24,9 +24,9 @@ module datapath (clk,
     input [1:0] reg_dst;
     input mem_to_reg, alu_src_a, reg_write, ir_write, IorD, pc_write, pc_write_cond, zero_in, zero_out;
     input [1:0] alu_src_b;
-    intput [1:0] pc_src;
+    input [1:0] pc_src;
     input  [2:0] alu_ctrl;
-    output adr_to_write[31:0];
+    output [31:0] adr_to_write;
     output [31:0] inst;
     
     wire [31:0] pc_out;
