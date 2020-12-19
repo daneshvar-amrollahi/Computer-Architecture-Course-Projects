@@ -117,11 +117,11 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
     
     always @(ps)
     begin
-        {pc_write, pc_write_cond, IorD, ir_write, alu_src_a} = 5'b0;
-        {alu_src_b}                                          = 2'b0;
-        {mem_to_reg, reg_write, mem_read, mem_write, pc_src} = 6'b0;
-        {reg_dst}                                            = 2'b0;
-        {alu_op}                                             = 2'b00;
+        {pc_write, pc_write_cond, IorD, ir_write, alu_src_a} = {5'b0};
+        {alu_src_b}                                          = {2'b0};
+        {mem_to_reg, reg_write, mem_read, mem_write, pc_src} = {6'b0};
+        {reg_dst}                                            = {2'b0};
+        {alu_op}                                             = {2'b00};
         
         case (ps)
             `S0:    {mem_read, ir_write, alu_src_b, pc_write} = {1'b1, 1'b1, 2'b01, 1'b1};
@@ -154,5 +154,7 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
             `S16:   {reg_write} = {1'b1};
         endcase
     end
+
+    assign zero_out = zero_in;
     
 endmodule
