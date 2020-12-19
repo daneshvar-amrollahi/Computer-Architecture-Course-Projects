@@ -47,6 +47,8 @@ module datapath (clk,
     wire [31:0] a_out;
     wire [31:0] b_out;
 
+    wire [31:0] aluout_out;
+
     reg_32b PC(mux6_out, rst, (zero_in & pc_write_cond) | pc_write, clk, pc_out);
 
     mux2to1_32b MUX1(pc_out, aluout_out, IorD, mux1_out);    

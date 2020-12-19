@@ -15,13 +15,17 @@ module mips_tb();
                         .adr_to_write(adr_to_write)); //az dp be mem
     
     
-
+    wire two_thousand, two_thousand_four;
     memory MEMORY(.adr(adr_to_write),
                  .d_in(data_to_mem),
                  .mrd(mem_read),
                  .mwr(mem_write),
                  .clk(clk),
-                 .d_out(mem));
+                 .d_out(mem),
+                 .two_thousand(two_thousand),
+                 .two_thousand_four(two_thousand_four));
+
+    
     
     initial
     begin
