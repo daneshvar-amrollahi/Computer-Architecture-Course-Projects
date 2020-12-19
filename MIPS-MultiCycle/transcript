@@ -1,0 +1,180 @@
+# Loading project CA3
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of mips_multi_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.mips_tb
+# vsim work.mips_tb 
+# Start time: 23:17:37 on Dec 19,2020
+# Loading work.mips_tb
+# Loading work.mips_multi_cycle
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_5b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.mux4to1_32b
+# Loading work.alu
+# Loading work.shl2_26b
+# Loading work.memory
+add wave sim:/mips_tb/*
+add wave sim:/mips_tb/CPU/CU/*
+run -all
+# First number is         37
+# Second number is         27
+# index 2000 is          x
+# index 2004 is          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of mips_multi_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_tb
+# Loading work.mips_multi_cycle
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_5b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.mux4to1_32b
+# Loading work.alu
+# Loading work.shl2_26b
+# Loading work.memory
+run -all
+# First number is         37
+# Second number is         27
+# index 2000 is          x
+# index 2004 is          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of mips_multi_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.mips_tb
+# End time: 23:27:19 on Dec 19,2020, Elapsed time: 0:09:42
+# Errors: 0, Warnings: 0
+# vsim work.mips_tb 
+# Start time: 23:27:19 on Dec 19,2020
+# Loading work.mips_tb
+# Loading work.mips_multi_cycle
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_5b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.mux4to1_32b
+# Loading work.alu
+# Loading work.shl2_26b
+# Loading work.memory
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'two_thousand'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v(8).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_tb/MEMORY File: /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(19): [PCDPC] - Port size (1) does not match connection size (32) for port 'two_thousand_four'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_tb/MEMORY File: /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v
+add wave sim:/mips_tb/*
+run -all
+# First number is         37
+# Second number is         27
+# index 2000 is          x
+# index 2004 is          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of mips_multi_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_tb
+# Loading work.mips_multi_cycle
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_5b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.mux4to1_32b
+# Loading work.alu
+# Loading work.shl2_26b
+# Loading work.memory
+run -all
+# First number is         37
+# Second number is         27
+# index 2000 is          x
+# index 2004 is          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# End time: 00:03:52 on Dec 20,2020, Elapsed time: 0:36:33
+# Errors: 0, Warnings: 2
