@@ -47,7 +47,7 @@ module datapath (clk,
 
     reg_32b PC(mux6_out, rst, (zero_in & pc_write_cond) | pc_write, clk, pc_out);
 
-    mux4to1_32b MUX1(pc_out, aluout_out, IorD, mux1_out);    
+    mux2to1_32b MUX1(pc_out, aluout_out, IorD, mux1_out);    
     
     reg_32b IR(mem, rst, ir_write, clk, ir_out);
 
@@ -67,7 +67,7 @@ module datapath (clk,
 
     mux2to1_32b MUX4(pc_out, a_out, alu_src_a, mux4_out);
 
-    mux4to1_32b MUX5(b_out, {28'b0, 4'b0100}, sgn_ext_out, shl2_32_out, alu_src_b, mux5_out);
+    mux4to1_32b MUX5(b_out, 32'd4, sgn_ext_out, shl2_32_out, alu_src_b, mux5_out);
 
     alu ALU(mux4_out, mux5_out, alu_ctrl, alu_out, zero_out);
 
