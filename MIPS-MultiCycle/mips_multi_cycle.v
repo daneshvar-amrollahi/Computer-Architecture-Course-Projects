@@ -2,7 +2,7 @@ module mips_multi_cycle(clk,
                         rst,
                         mem,                 //az mem be dp
                         data_to_mem,         //az dp be mem
-                        mem_read mem_write, //az cu be mem
+                        mem_read, mem_write, //az cu be mem
                         adr_to_write); //az dp be mem
     
     
@@ -14,7 +14,11 @@ module mips_multi_cycle(clk,
     output mem_read, mem_write;
     
     
-    
+    wire [31:0] inst;
+    wire zero_out, zero_in, pc_write, pc_write_cond, IorD, ir_write, mem_to_reg, reg_write, alu_src_a;
+    wire [1:0] reg_dst, alu_src_b, pc_src;
+    wire [2:0] operation;
+
     controller CU(.opcode(inst[31:26]),        //coming from inst (output of datapath) (wire konid tooye MIPS ...)
     .func(inst[5:0]),          ////coming from inst (output of datapath) (wire konid toyoe MIPS - 5:0)
     .zero_out(zero_out),      //wire beshe be zero_in be dp (baraye beq)
@@ -56,8 +60,4 @@ module mips_multi_cycle(clk,
     .inst(inst));
     )
 
-    wire [31:0] inst;
-    wire zero_out, zero_in, pc_write, pc_write_cond, IorD, ir_write, mem_to_reg, reg_write, alu_src_a;
-    wire [1:0] reg_dst, alu_src_b, pc_src;
-    wire [2:0] operation;
-    
+}

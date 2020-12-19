@@ -1,10 +1,10 @@
 
-module mem(adr,
+module memory(adr,
                  d_in,
                  mrd,
                  mwr,
                  clk,
-                 d_out,
+                 d_out);
     input [31:0] adr;
     input [31:0] d_in;
     input mrd, mwr, clk;
