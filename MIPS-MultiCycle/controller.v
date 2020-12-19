@@ -1,19 +1,20 @@
-`define   S0      4'b0000
-`define   S1      4'b0001
-`define   S2      4'b0010
-`define   S3      4'b0011
-`define   S4      4'b0100
-`define   S5      4'b0101
-`define   S6      4'b0110
-`define   S7      4'b0111
-`define   S8      4'b1000
-`define   S9      4'b1001
-`define   S10     4'b1010
-`define   S11     4'b1011
-`define   S12     4'b1100
-`define   S13     4'b1101
-`define   S14     4'b1110
-`define   S15     4'b1111
+`define   S0      5'b00000
+`define   S1      5'b00001
+`define   S2      5'b00010
+`define   S3      5'b00011
+`define   S4      5'b00100
+`define   S5      5'b00101
+`define   S6      5'b00110
+`define   S7      5'b00111
+`define   S8      5'b01000
+`define   S9      5'b01001
+`define   S10     5'b01010
+`define   S11     5'b01011
+`define   S12     5'b01100
+`define   S13     5'b01101
+`define   S14     5'b01110
+`define   S15     5'b01111
+`define   S16     5'b01111
 
 `define J       6'b000010
 `define JAL     6'b000011
@@ -43,19 +44,19 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
                    ir_write,
                    alu_src_a,
                    alu_src_b,
-                   clk rst);
+                   clk,
+                   rst);
     
     output zero_out;
     input zero_in;
-    output pc_write, pc_write_cond, IorD, ir_write, alu_src_a;
-    output [1:0] alu_src_b;
+    output reg pc_write, pc_write_cond, IorD, ir_write, alu_src_a;
+    output reg [1:0] alu_src_b;
     
     input [5:0] opcode;
     input [5:0] func;
-    output  mem_to_reg, reg_write, alu_src, mem_read, mem_write, pc_src;
-    output [1:0] pc_src;
+    output  reg mem_to_reg, reg_write, mem_read, mem_write;
+    output reg [1:0] pc_src;
     
-    reg mem_to_reg, reg_write, mem_read, mem_write;
     output [2:0] operation;
     
     output reg [1:0] reg_dst;
@@ -79,19 +80,19 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
         case (ps)
             `S0:  ns = `S1;
             `S1:    opcode == `J    ?   ns = `S9:
-                    opcode == `BEQ  ?   ns = `S8;
-                    opcode == `RTYPE?   ns = `S6:
-                    opcode == `LW   ?   ns = `S2:
-                    opcode == `SW   ?   ns = `S2:
-                    opcode == `JAL  ?   ns = `S10:
-                    opcode == `JR   ?   ns = `S12:
-                    opcode == `SLTI ?   ns = `S13;
-                    ns = `S1; //baghiasho badan minveisim
-
+            opcode == `BEQ  ?   ns = `S8;
+            opcode == `RTYPE?   ns = `S6:
+            opcode == `LW   ?   ns = `S2:
+            opcode == `SW   ?   ns = `S2:
+            opcode == `JAL  ?   ns = `S10:
+            opcode == `JR   ?   ns = `S12:
+            opcode == `SLTI ?   ns = `S13:
+            ns = `S15; //ADDI
+            
             `S2:    opcode == `LW   ?   ns = `S3:
-                                        ns = `S5;
-
-                    
+            ns = `S5;
+            
+            
             `S3:  ns = `S4;
             `S4:  ns = `S0;
             `S5:  ns = `S0;
@@ -102,14 +103,56 @@ module controller (opcode,        //coming from inst (output of datapath) (wire 
             
             `S10: ns = `S11;
             `S11: ns = `S0;
-
+            
             `S12: ns = `S0;
-
+            
             `S13: ns = `S14;
             `S14: ns = `S0;
-
-            `S15: ns = `S0;
+            
+            `S15: ns = `S16;
+            `S16: ns = `S0;
             
         endcase
     end
+    
+    always @(ps)
+    begin
+        {pc_write, pc_write_cond, IorD, ir_write, alu_src_a} = 5'b0;
+        {alu_src_b}                                          = 2'b0;
+        {mem_to_reg, reg_write, mem_read, mem_write, pc_src} = 6'b0;
+        {reg_dst}                                            = 2'b0;
+        {alu_op}                                             = 2'b00;
+        
+        case (ps)
+            `S0:    {mem_read, ir_write, alu_src_b, pc_write} = {1'b1, 1'b1, 2'b01, 1'b1};
+            `S1:    {alu_src_b}                               = {2'b11};
+            `S2:    {alu_src_a, alu_src_b}                    = {1'b1, 2'b10}; //MemRef
+            `S3:    {IorD, mem_read}                          = {1'b1, 1'b1}; //LW
+            `S4:    {reg_write, mem_to_reg}                   = {1'b1, 1'b1}; //LW
+            `S5:    {mem_write, IorD}                         = {1'b1, 1'b1}; //etmaame SW
+            
+            `S6:    {alu_src_a, alu_op}  = {1'b1, 2'b10}; //shorooe RTYPE
+            `S7:    {reg_dst, reg_write} = {1'b1, 1'b1}; //RTYPE completion
+            
+            `S8:    {alu_src_a, alu_op, pc_write_cond, pc_src} = {1'b1, 2'b01, 1'b1, 2'b10}; //BEQ
+            
+            
+            `S9:    {pc_write, pc_src} = {1'b1, 2'b01}; //JUMP
+            
+            `S10:   {reg_write, reg_dst} = {1'b1, 2'b10}; //J and Link
+            
+            `S11:   {pc_src, pc_write} = {2'b01, 1'b1}; //Etmaame J and Link
+            
+            `S12:   {pc_src} = {2'b11}; //Etmaame JR
+            
+            `S13:   {alu_src_b, alu_src_a, alu_op} = {2'b10, 1'b1, 2'b11}; //shorooe SLTI
+            
+            `S14:   {reg_write} = {1'b1}; //etmaame SLTI
+
+            `S15:   {alu_src_a, alu_src_b} = {1'b1, 2'b10};
+
+            `S16:   {reg_write} = {1'b1};
+        endcase
+    end
+    
 endmodule
