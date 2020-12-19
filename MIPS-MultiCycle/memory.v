@@ -15,7 +15,7 @@ module memory(adr,
     initial
     begin
         $readmemb("nums8b.mem", mem); //load array of length 20
-        $readmemb("instSLTI.mem", mem);
+        $readmemb("test.mem", mem);
     end
     
     assign d_out = (mrd == 1'b1) ? {mem[adr+3], mem[adr+2], mem[adr+1], mem[adr]} : 32'd0;
