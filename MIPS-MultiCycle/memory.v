@@ -17,10 +17,6 @@ module memory(adr,
     initial
     begin
         $readmemb("nums8b.mem", mem); //load array of length 20
-        $display("First number is %d", {mem[1000+3], mem[1000+2], mem[1000+1], mem[1000]});
-        $display("Second number is %d", {mem[1004+3], mem[1004+2], mem[1004+1], mem[1004]});
-        $display("index 2000 is %d", {mem[2000+3], mem[2000+2], mem[2000+1], mem[2000]});
-        $display("index 2004 is %d", {mem[2004+3], mem[2004+2], mem[2004+1], mem[2004]});
         $readmemb("instMIN20.mem", mem);
     end
     
