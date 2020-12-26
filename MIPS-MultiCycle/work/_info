@@ -9,26 +9,26 @@ z2
 cModel Technology
 d/home/daneshvar/Desktop/CA2
 valu
-Z0 !s110 1608407886
+Z0 !s110 1608836504
 !i10b 1
 !s100 CVjX85SUfWY7Io1bQU2eC2
 I>M4XdYLXAWb>_UHAl@fmZ3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 d/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle
-w1608355786
+Z3 w1608411551
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v
 L0 1
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1608407886.000000
+Z5 !s108 1608836504.000000
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 valu_controller
 R0
 !i10b 1
@@ -36,20 +36,20 @@ R0
 I4z>kDdeB]eWNX;oA<Um7a0
 R1
 R2
-w1608376760
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu_controller.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu_controller.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/alu_controller.v|
 !i113 1
-R5
 R6
+R7
 vcontroller
 R0
 !i10b 1
@@ -57,20 +57,20 @@ R0
 I@UPB67N1fQh6ZG`TUd30f0
 R1
 R2
-w1608407129
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v
 L0 30
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/controller.v|
 !i113 1
-R5
 R6
+R7
 vdatapath
 R0
 !i10b 1
@@ -78,41 +78,41 @@ R0
 IX@PYn5Yb^lRm`lW384g6f3
 R1
 R2
-w1608398938
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/datapath.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/datapath.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/datapath.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/datapath.v|
 !i113 1
-R5
 R6
+R7
 vmemory
 R0
 !i10b 1
-!s100 Jca1fZOmPnlAHgVzKadBC3
-IGEFDIRZJZlbWFhAkHko2F0
+!s100 fNa1;6g76iUHfWj2NXz4l3
+I7inVJE?VFiboDVRaaFi3G0
 R1
 R2
-w1608407879
+w1608420925
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/memory.v|
 !i113 1
-R5
 R6
+R7
 vmips_multi_cycle
 R0
 !i10b 1
@@ -120,20 +120,20 @@ R0
 IUJ>hfOKYnTolEmfBVo]Lb2
 R1
 R2
-w1608383245
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_multi_cycle.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_multi_cycle.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_multi_cycle.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_multi_cycle.v|
 !i113 1
-R5
 R6
+R7
 vmips_tb
 R0
 !i10b 1
@@ -141,20 +141,20 @@ R0
 I5>iEYj]GLTfGS1zO[7KDh3
 R1
 R2
-w1608407817
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v|
 !i113 1
-R5
 R6
+R7
 vmux2to1_32b
 R0
 !i10b 1
@@ -162,20 +162,20 @@ R0
 I>f5K;5feLQZGXz=BI;Ig72
 R1
 R2
-w1607382511
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_32b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_32b.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_32b.v|
 !i113 1
-R5
 R6
+R7
 vmux2to1_5b
 R0
 !i10b 1
@@ -183,20 +183,20 @@ R0
 II3;mj[iLLNPP?QBG^F_ZZ2
 R1
 R2
-w1608361971
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_5b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_5b.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_5b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux2to1_5b.v|
 !i113 1
-R5
 R6
+R7
 vmux3to1_5b
 R0
 !i10b 1
@@ -204,20 +204,20 @@ R0
 ITA@DR[aiGmZ42aEg[eeL<2
 R1
 R2
-w1607382515
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux3to1_5b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux3to1_5b.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux3to1_5b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux3to1_5b.v|
 !i113 1
-R5
 R6
+R7
 vmux4to1_32b
 R0
 !i10b 1
@@ -225,20 +225,20 @@ R0
 IN[b@XFBKOCPgFI811agLC3
 R1
 R2
-w1608383267
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux4to1_32b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux4to1_32b.v
 L0 2
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux4to1_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mux4to1_32b.v|
 !i113 1
-R5
 R6
+R7
 vreg_32b
 R0
 !i10b 1
@@ -246,20 +246,20 @@ R0
 IIQmh=WKV4RfmR8DTlVL]d1
 R1
 R2
-w1608360412
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_32b.v|
 !i113 1
-R5
 R6
+R7
 vreg_file
 R0
 !i10b 1
@@ -267,20 +267,20 @@ R0
 I;;f2L07XkV`ONIZSAUU_21
 R1
 R2
-w1608355769
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_file.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_file.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_file.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/reg_file.v|
 !i113 1
-R5
 R6
+R7
 vshl2_26b
 R0
 !i10b 1
@@ -288,20 +288,20 @@ R0
 IS<H:GI_e5daT9EHLVAWP_2
 R1
 R2
-w1608362877
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_26b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_26b.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_26b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_26b.v|
 !i113 1
-R5
 R6
+R7
 vshl2_32b
 R0
 !i10b 1
@@ -309,20 +309,20 @@ R0
 IBQAIhhhWVLkL=o:W1YFA51
 R1
 R2
-w1608362810
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_32b.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_32b.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/shl2_32b.v|
 !i113 1
-R5
 R6
+R7
 vsign_ext
 R0
 !i10b 1
@@ -330,17 +330,17 @@ R0
 I?Umea7c=d7A1k;EkeKU<a0
 R1
 R2
-w1607382566
+R3
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/sign_ext.v|
 !i113 1
-R5
 R6
+R7
