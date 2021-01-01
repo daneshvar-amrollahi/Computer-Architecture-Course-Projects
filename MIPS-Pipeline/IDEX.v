@@ -25,23 +25,25 @@ endmodule
 
 
 
-module IDEX_datas(clk, rst, read_data1, read_data2, sgn_ext, Rt, Rd, Rs, read_data1_out, read_data2_out, sgn_ext_out, Rt_out, Rd_out, Rs_out);
+module IDEX_datas(clk, rst, read_data1, read_data2, sgn_ext, Rt, Rd, Rs, adder1, read_data1_out, read_data2_out, sgn_ext_out, Rt_out, Rd_out, Rs_out, adder1_out);
     input clk, rst;
     input [31:0] read_data1, read_data2, sgn_ext;
     input [4:0] Rt, Rd, Rs;
+    input [31:0] adder1;
 
     output reg [31:0] read_data1_out, read_data2_out, sgn_ext_out;
     output reg [4:0] Rt_out, Rd_out, Rs_out;
+    output reg [31:0] adder1_out;
 
     always @(posedge clk) begin
         if (rst)
         begin
-            {read_data1_out, read_data2_out, sgn_ext_out} = {96'b0};
+            {read_data1_out, read_data2_out, sgn_ext_out, adder1_out} = {128'b0};
             {Rt_out, Rd_out, Rs_out} = {15'b0};
         end
         else
         begin
-            {read_data1_out, read_data2_out, sgn_ext_out} <= {read_data1, read_data2, sgn_ext};
+            {read_data1_out, read_data2_out, sgn_ext_out, adder1_out} <= {read_data1, read_data2, sgn_ext, adder1};
             {Rt_out, Rd_out, Rs_out} <= {Rt, Rd, Rs};
         end
     end
