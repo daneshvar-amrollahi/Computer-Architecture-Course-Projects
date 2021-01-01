@@ -94,7 +94,7 @@ module datapath (clk,
     IDEX_ctrl IDEX_CTRL(clk, rst, alu_ctrl, alu_src, reg_write, reg_dst, mem_read, mem_write, mem_to_reg, 
                 IDEX_alu_ctrl_out, IDEX_alu_src_out, IDEX_reg_write_out, IDEX_reg_dst_out, IDEX_mem_read_out, IDEX_mem_write_out, IDEX_mem_to_reg_out);
 
-
+    //done togetherrrrr
 
 
     ////////////////////////////////////////////////////
