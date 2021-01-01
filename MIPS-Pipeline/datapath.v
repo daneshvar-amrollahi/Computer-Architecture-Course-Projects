@@ -156,17 +156,24 @@ module datapath (clk,
 
     ////////////////////////////////////////////////////
     //WB
+
+    wire [1:0] MEMWB_mem_to_reg_out;
+    wire MEMWB_reg_write_out;
+    MEMWB_ctrl MEMWB_CTRL(clk, rst, EXMEM_mem_to_reg_out, EXMEM_reg_write_out, 
+        MEMWB_mem_to_reg_out, MEMWB_reg_write_out);
+
+    wire [31:0] MEMWB_data_from_memory_out;
+    wire [31:0] MEMWB_alu_result_out;
+    wire [31:0] MEMWB_mux5_out;
+    wire [31:0] MEMWB_adder1_out;
+    MEMWB_datas MEMWB_DATAS(clk, rst, data_in, EXMEM_alu_result_out, EXMEM_mux5_out, EXMEM_adder1_out
+                MEMWB_data_from_memory_out, MEMWB_alu_result_out, MEMWB_mux5_out, MEMWB_adder1_out);
+
+    mux3to1 MUX6(MEMWB_alu_result_out, MEMWB_data_from_memory_out, MEMWB_adder1_out, MEMWB_mem_to_reg_out, mux6_out); //slide 2 of google jamboard
+
     
-
-
-
-
-
-
-    ////////////////////////////////////////////////////
-
-    
-    assign data_adr = alu_out;  //Address in data_memory where data should be written
-    assign data_out = read_data2; //Value that should be written in data_memory
+    assign data_adr = EXMEM_alu_result_out;
+    assign data_out = EXMEM_mux3_out; 
+    /////////////////////////////////////////////////////////
     
 endmodule

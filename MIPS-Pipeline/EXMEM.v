@@ -39,7 +39,7 @@ module EXMEM_datas(clk, rst, adder1, zero, alu_result, mux3_out, mux5_out, adder
         
     always @(posedge clk) begin
         if (rst)
-            {adder1_out, zero_out, alu_result_out, mux3_out_out, mux5_out_out} = {32'b0, 1'b0, 32'b0, 32'b0, 5'b0};
+            {adder1_out, zero_out, alu_result_out, mux3_out_out, mux5_out_out} <= {32'b0, 1'b0, 32'b0, 32'b0, 5'b0};
         else
             {adder1_out, zero_out, alu_result_out, mux3_out_out, mux5_out_out} <= {adder1, zero, alu_result, mux3_out, mux5_out};
     end

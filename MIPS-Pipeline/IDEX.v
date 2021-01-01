@@ -38,8 +38,8 @@ module IDEX_datas(clk, rst, read_data1, read_data2, sgn_ext, Rt, Rd, Rs, adder1,
     always @(posedge clk) begin
         if (rst)
         begin
-            {read_data1_out, read_data2_out, sgn_ext_out, adder1_out} = {128'b0};
-            {Rt_out, Rd_out, Rs_out} = {15'b0};
+            {read_data1_out, read_data2_out, sgn_ext_out, adder1_out} <= {128'b0};
+            {Rt_out, Rd_out, Rs_out} <= {15'b0};
         end
         else
         begin
