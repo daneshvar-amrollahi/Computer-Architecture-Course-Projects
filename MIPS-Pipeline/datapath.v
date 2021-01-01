@@ -11,10 +11,12 @@ module datapath (clk,
                  pc_src, //ok
                  alu_ctrl, //ok
                  reg_write, //ok
-                 zero, 
+                 zero, //ok
                  flush,
                  mem_read,
-                 mem_write);
+                 mem_write,
+                 forwardA,
+                 forwardB);
     
     input  clk, rst;
     output [31:0] inst_adr;
@@ -29,6 +31,7 @@ module datapath (clk,
     output zero;
     input flush;
     output mem_read,mem_write;
+    input [1:0] forwardA, forwardB;
     
     //our signals coming from controller;
     //slti;
@@ -96,48 +99,28 @@ module datapath (clk,
 
     //done togetherrrrr
 
+    wire [4:0] mux5_out;
+    mux3to1_5b MUX5(IDEX_Rt_out, IDEX_Rd_out, 5'b11111, IDEX_reg_dst_out, mux5_out);
+
+    wire [31:0] mux3_out, mux4_out;
+    mux2to1_32b MUX4(mux3_out, IDEX_sgn_ext_out, IDEX_alu_src_out, mux4_out);
+
+
+    wire [31:0] EXMEM_alu_result_out;
+
+    mux3to1_32b MUX3(IDEX_read2_out, mux6_out, EXMEM_alu_result_out, forwardB, mux3_out);
+
+    wire [31:0] mux2_out;
+    mux3to1_32b MUX2(IDEX_read1_out, mux6_out, EXMEM_alu_result_out, forwardA, mux2_out);
+
+    wire [31:0] alu_result;
+    alu ALU(mux2_out, mux4_out, IDEX_alu_ctrl_out, alu_result, zero);
+
 
     ////////////////////////////////////////////////////
+        
 
 
-
-    mux3to1_5b MUX_1(inst[20:16], inst[15:11], 5'b11111, reg_dst, mux1_out);
-    
-    //adding mux5 for writeData in RF
-    mux3to1_32b MUX_5(mux4_out,  adder1_out, alu_out, data_to_write, mux5_out);
-    
-    //set writeData input to mux5_out;
-    reg_file  RF(mux5_out, inst[25:21], inst[20:16], mux1_out, reg_write, rst, clk, read_data1, read_data2);
-    
-    sign_ext SGN_EXT(inst[15:0], sgn_ext_out);
-    
-    mux2to1_32b MUX_2(read_data2, sgn_ext_out , alu_src, mux2_out);
-    
-    alu ALU(read_data1, mux2_out, alu_ctrl, alu_out, zero);
-    
-    shl2 SHL2(sgn_ext_out, shl2_out);
-    
-    adder_32b ADDER_2(adder1_out, shl2_out, 1'b0, , adder2_out);
-    
-    mux2to1_32b MUX_3(adder1_out, adder2_out, pc_src, mux3_out);
-    
-    mux2to1_32b MUX_4(alu_out, data_in, mem_to_reg, mux4_out);
-    
-    //adding MUX6
-    shl2_26b SHL26(inst[25:0], shl26_out);
-    assign in0MUX6 = {adder1_out[31:28], shl26_out};
-    
-    mux2to1_32b MUX_6(in0MUX6, read_data1, jr, mux6_out);
-    
-    //adding MUX7
-    mux2to1_32b MUX_7(mux3_out, mux6_out, jmp, mux7_out);
-    
-    //adding sign extend 10b
-    //sign_ext_10b SGN_EXT_10B(inst[15:6], sgn_ext_10_out);
-    
-    //adding MUX8
-    //mux2to1_32b MUX_8(sgn_ext_out, sgn_ext_10_out, slti, mux8_out);
-    
     
     assign data_adr = alu_out;  //Address in data_memory where data should be written
     assign data_out = read_data2; //Value that should be written in data_memory
