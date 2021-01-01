@@ -6,4 +6,3 @@ module shl2_26b (d_in,
     assign d_out = {d_in, 2'b00};
     
 endmodule
-
