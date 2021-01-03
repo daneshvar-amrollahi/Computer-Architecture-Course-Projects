@@ -1,6 +1,6 @@
-module forward_unit(IDEX_Rs, IDEX_Rt, EXMEM_reg_write, EXMEM_Rd, MEMWB_reg_write, MEMWB_Rd, forwardA, forwardB)
+module forward_unit(IDEX_Rs, IDEX_Rt, EXMEM_reg_write, EXMEM_Rd, MEMWB_reg_write, MEMWB_Rd, forwardA, forwardB);
     input [4:0] IDEX_Rs, IDEX_Rt;
-    input EXMEM_reg_write;
+    input EXMEM_reg_write, MEM_reg_write;
     input [4:0] EXMEM_Rd, MEMWB_Rd;
     output reg [1:0] forwardA, forwardB;
 

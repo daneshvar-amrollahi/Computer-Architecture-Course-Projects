@@ -20,7 +20,11 @@ module datapath (clk,
                  mem_read_to_data_mem,
                  pc_load, //coming from hazard detection unit
                  IFID_Ld, //coming from hazard detection unit
-                 sel_signal //coming from hazard detection unit
+                 sel_signal, //coming from hazard detection unit
+                 IFIDopcode_out, //output to controller
+                 IFIDfunc_out, //output to controller
+                 zero_out, //output to controller (not used)
+                 operands_equal //output to controller
                  );
     
     input  clk, rst;
@@ -39,6 +43,10 @@ module datapath (clk,
     input pc_load;
     input IFID_Ld;
     input sel_signal;
+    output [5:0] IFIDopcode_out;
+    output [5:0] IFIDfunc_out;
+    output zero_out;
+    output operands_equal;
 
     output mem_read_to_data_mem, mem_write_to_data_mem;
 
@@ -55,10 +63,14 @@ module datapath (clk,
     
     wire [31:0] adder1_out;
     adder_32b ADDER_1(pc_out , 32'd4, 1'b0, , adder1_out);
-    assign inst_adr = pc_out;
+    assign inst_adr = pc_out; //khorooji be inst. memory
     
     wire [31:0] IFIDinst_out, IFIDadder1_out;
     IFID IFIDReg(clk, rst, IFID_Ld, flush, inst, adder1_out, IFIDinst_out, IFIDadder1_out);
+
+    assign IFIDopcode_out = IFIDinst_out[31:26];
+    assign IFIDfunc_out = IFIDinst_out[5:0];
+
 
     wire [31:0] adder2_out;
     wire [27:0] shl2_26b_out;
@@ -89,9 +101,11 @@ module datapath (clk,
     wire [4:0] MEMWBmux5_out;
     wire [31:0] read_data2;
     reg_file RF(mux6_out, IFIDinst_out[25:21], IFIDinst_out[20:16], MEMWBmux5_out, reg_write, rst, clk, read_data1, read_data2);
+
+    assign operands_equal = (read_data1 == read_data2);
     ////////////////////////////////////////////////////
 
-    
+
     ///////////////////////////////////////////////////
     //EX
 
@@ -144,6 +158,8 @@ module datapath (clk,
     wire [31:0] alu_result;
     wire alu_zero;
     alu ALU(mux2_out, mux4_out, IDEX_alu_ctrl_out, alu_result, alu_zero);
+
+    assign zero_out = alu_zero;
     ////////////////////////////////////////////////////
         
 
@@ -165,8 +181,8 @@ module datapath (clk,
     EXMEM_ctrl EXMEM_CTRL(clk, rst, IDEX_mem_write_out, IDEX_mem_read_out, IDEX_mem_to_reg_out, IDEX_reg_write_out,
                 EXMEM_mem_write_out, EXMEM_mem_read_out, EXMEM_mem_to_reg_out, EXMEM_reg_write_out);
 
-    assign mem_write_to_data_mem = EXMEM_mem_write_out;
-    assign mem_read_to_data_mem = EXMEM_mem_read_out;
+    assign mem_write_to_data_mem = EXMEM_mem_write_out; //khorooji be data memory
+    assign mem_read_to_data_mem = EXMEM_mem_read_out; //khorooji be data memory
 
     ////////////////////////////////////////////////////
 
@@ -191,8 +207,8 @@ module datapath (clk,
     mux3to1 MUX6(MEMWB_alu_result_out, MEMWB_data_from_memory_out, MEMWB_adder1_out, MEMWB_mem_to_reg_out, mux6_out); //slide 2 of google jamboard
 
     
-    assign data_adr = EXMEM_alu_result_out;
-    assign data_out = EXMEM_mux3_out; 
+    assign data_adr = EXMEM_alu_result_out; //khorooje be data memory
+    assign data_out = EXMEM_mux3_out;  //khorooji be data memory
     /////////////////////////////////////////////////////////
     
 endmodule

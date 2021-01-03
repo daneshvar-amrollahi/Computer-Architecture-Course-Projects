@@ -1,30 +1,29 @@
 module controller (opcode,
                    func,
                    zero,
-                   reg_dst,
-                   mem_to_reg,
-                   reg_write,
-                   alu_src,
-                   mem_read,
-                   mem_write,
-                   pc_src,
-                   operation,
-                   data_to_write,
-                   jr,
-                   jmp);
+                   reg_dst, //okk
+                   mem_to_reg, //okk
+                   reg_write, //okk
+                   alu_src, //okk
+                   mem_read, //okk
+                   mem_write, //okk
+                   pc_src, //okk
+                   operation, //okk
+                   IFflush, //okk
+                   operands_equal
+                   );
     
     input [5:0] opcode;
     input [5:0] func;
     input zero;
-    output  mem_to_reg, reg_write, alu_src,
-    mem_read, mem_write, pc_src;
-    reg mem_to_reg, reg_write,
-    alu_src, mem_read, mem_write;
+    output reg_write, alu_src, mem_read, mem_write;
+    output [1:0] pc_src;
+    output reg [1:0] mem_to_reg;
     output [2:0] operation;
-    
-    //our signals
-    output reg [1:0] reg_dst, data_to_write;
-    output reg jr, jmp; //reg ro shayad bekhay bardari
+    output IFflush;
+    input operands_equal;
+
+    output reg [1:0] reg_dst;
     
     reg [1:0] alu_op;
     reg branch;
@@ -33,37 +32,40 @@ module controller (opcode,
     
     always @(opcode)
     begin
-        {reg_dst, alu_src, mem_to_reg, reg_write, mem_read, mem_write, branch, alu_op, jmp, jr, data_to_write} = 14'd0;
+        {reg_dst, mem_to_reg, reg_write, alu_src, mem_read, mem_write, pc_src, operation, alu_op, IFflush} = {2'b00, 2'b00, 1'b0, 1'b0, 1'b0, 1'b0, 2'b00, 3'b000, 2'b00, 1'b0};
         case (opcode)
             // RType instructions
-            6'b000000 : {reg_dst, reg_write, alu_op} = {2'b01, 3'b110};
+            6'b000000 : {reg_dst, reg_write, alu_op} = {2'b01, 1'b1, 2'b10};
 
             // Load Word (lw) instruction
-            6'b100011 : {alu_src, mem_to_reg, reg_write, mem_read} = 4'b1111;
+            6'b100011 : {alu_src, mem_to_reg, reg_write, mem_read} = {1'b1, 2'b01, 1'b1, 1'b1};
             
             // Store Word (sw) instruction
             6'b101011 : {alu_src, mem_write} = 2'b11;
 
             // Branch on equal (beq) instruction
-            6'b000100 : {branch, alu_op} = 3'b101;
+            6'b000100 : {pc_src, IFflush} = {1'b0, operands_equal, operands_equal}; //operands_equal ? 2'b01 : 2'b00
             
             // Add immediate (addi) instruction
             6'b001001: {reg_write, alu_src} = 2'b11;
             
             // Jump (j) instruction
-            6'b000010: {jmp} = 1'b1;
+            6'b000010: {pc_src, IFflush} = {2'b10, 1'b1};
             
             // Jump and link (jal) instruction
-            6'b000011: {reg_dst, data_to_write, jmp} = {2'b10, 2'b01, 1'b1};
+            6'b000011: {reg_dst, mem_to_reg, pc_src} = {2'b10, 2'b10, 2'b10};
             
             // Jump Register (JR) instruction
-            6'b000110: {jr, jmp} = {2'b11};
+            6'b000110: {pc_src} = {2'b11};
             
             // Set Less Than immediate (SLTi) instruction
-            6'b001010: {reg_write, alu_src, alu_op,data_to_write} = {1'b1, 1'b1, 2'b11, 2'b10};
+            6'b001010: {alu_src, reg_dst, reg_write, alu_op, mem_to_reg} = {1'b1, 2'b00, 1'b1, 2'b11}, 2'b00}; 
+
+            //NOP (No Operation) 
+            //6'b111111: hame 0 mimoonan
         endcase
     end
     
-    assign pc_src = branch & zero;
+    //assign pc_src = branch & zero;
     
 endmodule
