@@ -91,7 +91,7 @@ module datapath (clk,
     reg_file RF(mux6_out, IFIDinst_out[25:21], IFIDinst_out[20:16], MEMWBmux5_out, reg_write, rst, clk, read_data1, read_data2);
     ////////////////////////////////////////////////////
 
-
+    
     ///////////////////////////////////////////////////
     //EX
 
@@ -121,8 +121,8 @@ module datapath (clk,
     wire IDEX_mem_read_in;
     wire IDEX_mem_write_in;
     wire [1:0] IDEX_mem_to_reg_in;
-    assign {IDEX_alu_ctrl_in, IDEX_alu_src_in, IDEX_reg_write_in, IDEX_reg_dst_in, IDEX_mem_read_in, IDEX_mem_write_in, IDEX_mem_write_in, IDEX_mem_to_reg_in} = mux7_out;
-    IDEX_ctrl IDEX_CTRL(clk, rst, alu_ctrl, alu_src, reg_write, reg_dst, mem_read, mem_write, mem_to_reg, //coming from controller (ke badan MUX bayad bezarim bade hazard unit)
+    assign {IDEX_alu_ctrl_in, IDEX_alu_src_in, IDEX_reg_write_in, IDEX_reg_dst_in, IDEX_mem_read_in, IDEX_mem_write_in, IDEX_mem_to_reg_in} = mux7_out;
+    IDEX_ctrl IDEX_CTRL(clk, rst, IDEX_alu_ctrl_in, IDEX_alu_src_in, IDEX_reg_write_in, IDEX_reg_dst_in, IDEX_mem_read_in, IDEX_mem_write_in, IDEX_mem_to_reg_in, //coming from controller (ke badan MUX bayad bezarim bade hazard unit)
                 IDEX_alu_ctrl_out, IDEX_alu_src_out, IDEX_reg_write_out, IDEX_reg_dst_out, IDEX_mem_read_out, IDEX_mem_write_out, IDEX_mem_to_reg_out);
 
     //done togetherrrrr
@@ -154,7 +154,7 @@ module datapath (clk,
 
     wire [31:0] EXMEM_adder1_out;
     wire EXMEM_zero_out;
-    wire [31:0] EXMEM_alu_result_out, EXMEM_mux3_out;
+    wire [31:0] EXMEM_mux3_out;
     wire [4:0] EXMEM_mux5_out;
     EXMEM_datas EXMEM_DATAS(clk, rst, IDEX_adder1_out, alu_zero, alu_result, mux3_out, mux5_out, 
             EXMEM_adder1_out, EXMEM_zero_out, EXMEM_alu_result_out, EXMEM_mux3_out, EXMEM_mux5_out);
@@ -185,7 +185,7 @@ module datapath (clk,
     wire [31:0] MEMWB_alu_result_out;
     wire [31:0] MEMWB_mux5_out;
     wire [31:0] MEMWB_adder1_out;
-    MEMWB_datas MEMWB_DATAS(clk, rst, data_in, EXMEM_alu_result_out, EXMEM_mux5_out, EXMEM_adder1_out
+    MEMWB_datas MEMWB_DATAS(clk, rst, data_in, EXMEM_alu_result_out, EXMEM_mux5_out, EXMEM_adder1_out,
                 MEMWB_data_from_memory_out, MEMWB_alu_result_out, MEMWB_mux5_out, MEMWB_adder1_out);
 
     mux3to1 MUX6(MEMWB_alu_result_out, MEMWB_data_from_memory_out, MEMWB_adder1_out, MEMWB_mem_to_reg_out, mux6_out); //slide 2 of google jamboard
