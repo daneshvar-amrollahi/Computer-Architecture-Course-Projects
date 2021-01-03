@@ -1,10 +1,10 @@
-module IFID(clk, rst, flush, inst, adder1, inst_out, adder1_out);
+module IFID(clk, rst, ld, flush, inst, adder1, inst_out, adder1_out);
     input clk, rst, flush;
     input [31:0] inst, adder1;
 
     output reg [31:0] inst_out, adder1_out;
-
-    always @(posedge clk, posedge flush)
+    
+    always @(posedge clk, posedge flush) //shayad ham flush e khaali
     begin
         if (flush)
         begin
@@ -19,8 +19,10 @@ module IFID(clk, rst, flush, inst, adder1, inst_out, adder1_out);
         end
         else
         begin
-            inst_out <= inst;
-            adder1_out <= adder1;    
+            if (ld) begin
+                inst_out <= inst;
+                adder1_out <= adder1;    
+            end
         end
     end
 endmodule

@@ -8,7 +8,7 @@ module datapath (clk,
                  reg_dst, //ok
                  mem_to_reg, //ok
                  alu_src, //ok
-                 pc_src, //ok
+                 pc_src, //ok (az controller miad)
                  alu_ctrl, //ok
                  reg_write, //ok
                  flush,
@@ -18,6 +18,9 @@ module datapath (clk,
                  forwardB,
                  mem_write_to_data_mem,
                  mem_read_to_data_mem,
+                 pc_load, //coming from hazard detection unit
+                 IFID_Ld, //coming from hazard detection unit
+                 sel_signal //coming from hazard detection unit
                  );
     
     input  clk, rst;
@@ -33,6 +36,9 @@ module datapath (clk,
     input flush;    
     input mem_read,mem_write; //from controller (check this with Helia: These were declared as outputs, I changed them to inputs. It happened hol holi when Negin called)
     input [1:0] forwardA, forwardB;
+    input pc_load;
+    input IFID_Ld;
+    input sel_signal;
 
     output mem_read_to_data_mem, mem_write_to_data_mem;
 
@@ -45,14 +51,14 @@ module datapath (clk,
     //Instruction Fetch
     wire [31:0] mux1_out;
     wire [31:0] pc_out;
-    reg_32b PC(mux1_out, rst, 1'b1, clk, pc_out);
+    reg_32b PC(mux1_out, rst, pc_load, clk, pc_out);
     
     wire [31:0] adder1_out;
     adder_32b ADDER_1(pc_out , 32'd4, 1'b0, , adder1_out);
     assign inst_adr = pc_out;
     
     wire [31:0] IFIDinst_out, IFIDadder1_out;
-    IFID IFIDReg(clk, rst, flush, inst, adder1_out, IFIDinst_out, IFIDadder1_out);
+    IFID IFIDReg(clk, rst, IFID_Ld, flush, inst, adder1_out, IFIDinst_out, IFIDadder1_out);
 
     wire [31:0] adder2_out;
     wire [27:0] shl2_26b_out;
@@ -99,10 +105,23 @@ module datapath (clk,
     wire [2:0] IDEX_alu_ctrl_out;
     wire IDEX_reg_write_out;
     wire [1:0] IDEX_reg_dst_out;
-    wire IDEX_mem_read_out, mem_write_out;
+    wire IDEX_mem_read_out, IDEX_mem_write_out;
     wire IDEX_alu_src_out;
     wire [1:0] IDEX_mem_to_reg_out;
 
+    //3 + 1 + 1 + 2 + 1 + 1 + 2
+    wire [10:0] mux7_out;
+    mux2to1_11b MUX7(11'b0, {alu_ctrl, alu_src, reg_write, reg_dst, mem_read, mem_write, mem_to_reg}, sel_signal, mux7_out); 
+
+
+    wire [2:0] IDEX_alu_ctrl_in;
+    wire IDEX_alu_src_in;
+    wire IDEX_reg_write_in;
+    wire [1:0] IDEX_reg_dst_in;
+    wire IDEX_mem_read_in;
+    wire IDEX_mem_write_in;
+    wire [1:0] IDEX_mem_to_reg_in;
+    assign {IDEX_alu_ctrl_in, IDEX_alu_src_in, IDEX_reg_write_in, IDEX_reg_dst_in, IDEX_mem_read_in, IDEX_mem_write_in, IDEX_mem_write_in, IDEX_mem_to_reg_in} = mux7_out;
     IDEX_ctrl IDEX_CTRL(clk, rst, alu_ctrl, alu_src, reg_write, reg_dst, mem_read, mem_write, mem_to_reg, //coming from controller (ke badan MUX bayad bezarim bade hazard unit)
                 IDEX_alu_ctrl_out, IDEX_alu_src_out, IDEX_reg_write_out, IDEX_reg_dst_out, IDEX_mem_read_out, IDEX_mem_write_out, IDEX_mem_to_reg_out);
 
