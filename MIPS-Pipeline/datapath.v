@@ -68,7 +68,8 @@ module datapath (clk,
     reg_32b PC(mux1_out, rst, pc_load, clk, pc_out);
     
     wire [31:0] adder1_out;
-    adder_32b ADDER_1(pc_out , 32'd4, 1'b0, , adder1_out);
+    wire cout1;
+    adder_32b ADDER_1(pc_out , 32'd4, 1'b0, cout1 , adder1_out);
     assign inst_adr = pc_out; //khorooji be inst. memory
     
     wire [31:0] IFIDinst_out, IFIDadder1_out;
@@ -82,7 +83,7 @@ module datapath (clk,
     wire [31:0] adder2_out;
     wire [27:0] shl2_26b_out;
     wire [31:0] read_data1;
-    mux4to1_32b MUX1(adder1_out, adder2_out, {IFIDadder1_out[31:28], shl2_26b_out}, read_data1, pc_src);
+    mux4to1_32b MUX1(adder1_out, adder2_out, {IFIDadder1_out[31:28], shl2_26b_out}, read_data1, pc_src, mux1_out);
 
     ////////////////////////////////////////////////////
 
@@ -100,7 +101,8 @@ module datapath (clk,
     wire [31:0] shl2_32_out;
     shl2_32b SHL2_32(sgn_ext_out, shl2_32_out);
 
-    adder_32b ADDER_2(shl2_32_out, IFIDadder1_out, 1'b0, adder2_out);
+    wire cout2;
+    adder_32b ADDER_2(shl2_32_out, IFIDadder1_out, 1'b0, cout2, adder2_out);
 
     shl2_26b SHL2_26(IFIDinst_out[25:0], shl2_26b_out);
 
@@ -219,14 +221,14 @@ module datapath (clk,
 
     wire [31:0] MEMWB_data_from_memory_out;
     wire [31:0] MEMWB_alu_result_out;
-    wire [31:0] MEMWB_mux5_out;
+    wire [4:0] MEMWB_mux5_out;
     wire [31:0] MEMWB_adder1_out;
     MEMWB_datas MEMWB_DATAS(clk, rst, data_in, EXMEM_alu_result_out, EXMEM_mux5_out, EXMEM_adder1_out,
                 MEMWB_data_from_memory_out, MEMWB_alu_result_out, MEMWB_mux5_out, MEMWB_adder1_out);
 
     assign MEMWB_Rd = MEMWB_mux5_out;
 
-    mux3to1 MUX6(MEMWB_alu_result_out, MEMWB_data_from_memory_out, MEMWB_adder1_out, MEMWB_mem_to_reg_out, mux6_out); //slide 2 of google jamboard
+    mux3to1_32b MUX6(MEMWB_alu_result_out, MEMWB_data_from_memory_out, MEMWB_adder1_out, MEMWB_mem_to_reg_out, mux6_out); //slide 2 of google jamboard
 
     
     assign data_adr = EXMEM_alu_result_out; //khorooje be data memory

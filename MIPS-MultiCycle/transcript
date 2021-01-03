@@ -46,3 +46,436 @@
 # Compile of MEMWB.v failed with 2 errors.
 # Compile of MEMWB.v failed with 2 errors.
 # Compile of MEMWB.v was successful.
+vsim work.mips_pipe_tb
+# vsim work.mips_pipe_tb 
+# Start time: 16:18:37 on Jan 03,2021
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# ** Error: (vsim-3033) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(229): Instantiation of 'mux3to1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v
+#         Searched libraries:
+#             /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/work
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'mips_pipe_tb' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_pipe_tb/DM File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v
+# Error loading design
+# End time: 16:18:38 on Jan 03,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful with warnings.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim work.mips_pipe_tb
+# vsim work.mips_pipe_tb 
+# Start time: 16:19:27 on Jan 03,2021
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# ** Error: (vsim-3033) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(229): Instantiation of 'mux3to1' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v
+#         Searched libraries:
+#             /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/work
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+# Error loading design
+# End time: 16:19:28 on Jan 03,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim work.mips_pipe_tb
+# vsim work.mips_pipe_tb 
+# Start time: 16:20:38 on Jan 03,2021
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+# ** Warning: (vsim-3017) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(85): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/MUX1 File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v
+# ** Warning: (vsim-3722) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(85): [TFMPC] - Missing connection for port 'y'.
+# ** Warning: (vsim-3017) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(103): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/ADDER_2 File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(103): [PCDPC] - Port size (1) does not match connection size (32) for port 'cout'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/ADDER_2 File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v
+# ** Warning: (vsim-3722) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(103): [TFMPC] - Missing connection for port 'sum'.
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'mux5_out_in_out'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/MEMWB_DATAS File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+# ** Warning: (vsim-3017) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(103): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/ADDER_2 File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(103): [PCDPC] - Port size (1) does not match connection size (32) for port 'cout'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/ADDER_2 File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v
+# ** Warning: (vsim-3722) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(103): [TFMPC] - Missing connection for port 'sum'.
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'mux5_out_in_out'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/MEMWB_DATAS File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+# ** Warning: (vsim-3015) /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v(226): [PCDPC] - Port size (5) does not match connection size (32) for port 'mux5_out_in_out'. The port definition is at: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /mips_pipe_tb/CPU/DP/MEMWB_DATAS File: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+add wave sim:/mips_pipe_tb/*
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          0
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22

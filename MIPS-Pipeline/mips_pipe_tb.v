@@ -1,6 +1,6 @@
+`timescale 1ns/1ns
 module mips_pipe_tb();
 
-    
 
     wire [31:0] inst_adr, inst, data_adr, data_in, data_out;
     wire mem_read_to_data_mem, mem_write_to_data_mem;
