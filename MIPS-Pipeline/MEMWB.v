@@ -25,7 +25,7 @@ module MEMWB_datas(clk, rst, data_from_data_memory_in, alu_result_in, mux5_out_i
     input [4:0] mux5_out_in;
     input [31:0] adder1_in;
 
-    output reg [31:0] data_from_data_memory_out;
+    output reg [31:0] data_from_memory_out;
     output reg [31:0] alu_result_out;
     output reg [4:0] mux5_out_in_out;
     output reg [31:0] adder1_out;

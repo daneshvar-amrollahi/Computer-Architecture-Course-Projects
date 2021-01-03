@@ -122,7 +122,7 @@ module datapath (clk,
     IDEX_datas IDEX_DATAS(clk, rst, read_data1, read_data2, sgn_ext_out, IFIDinst_out[20:16], IFIDinst_out[15:11], IFIDinst_out[25:21], IFIDadder1_out, 
         IDEX_read1_out, IDEX_read2_out, IDEX_sgn_ext_out, IDEX_Rt_out, IDEX_Rd_out, IDEX_Rs_out, IDEX_adder1_out);
     
-    assign IDEX_Rt = IDEX_Rt_out;
+    assign IDEX_Rt = IDEX_RT_out;
     assign IDEX_Rs = IDEX_Rs_out;
 
     wire [2:0] IDEX_alu_ctrl_out;

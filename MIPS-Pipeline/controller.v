@@ -16,11 +16,11 @@ module controller (opcode,
     input [5:0] opcode;
     input [5:0] func;
     input zero;
-    output reg_write, alu_src, mem_read, mem_write;
-    output [1:0] pc_src;
+    output reg reg_write, alu_src, mem_read, mem_write;
+    output reg [1:0] pc_src;
     output reg [1:0] mem_to_reg;
     output [2:0] operation;
-    output IFflush;
+    output reg IFflush;
     input operands_equal;
 
     output reg [1:0] reg_dst;
@@ -32,7 +32,7 @@ module controller (opcode,
     
     always @(opcode)
     begin
-        {reg_dst, mem_to_reg, reg_write, alu_src, mem_read, mem_write, pc_src, operation, alu_op, IFflush} = {2'b00, 2'b00, 1'b0, 1'b0, 1'b0, 1'b0, 2'b00, 3'b000, 2'b00, 1'b0};
+        {reg_dst, mem_to_reg, reg_write, alu_src, mem_read, mem_write, pc_src, alu_op, IFflush} = {2'b00, 2'b00, 1'b0, 1'b0, 1'b0, 1'b0, 2'b00, 2'b00, 1'b0};
         case (opcode)
             // RType instructions
             6'b000000 : {reg_dst, reg_write, alu_op} = {2'b01, 1'b1, 2'b10};
@@ -59,7 +59,7 @@ module controller (opcode,
             6'b000110: {pc_src} = {2'b11};
             
             // Set Less Than immediate (SLTi) instruction
-            6'b001010: {alu_src, reg_dst, reg_write, alu_op, mem_to_reg} = {1'b1, 2'b00, 1'b1, 2'b11}, 2'b00}; 
+            6'b001010: {alu_src, reg_dst, reg_write, alu_op, mem_to_reg} = {1'b1, 2'b00, 1'b1, 2'b11, 2'b00}; 
 
             //NOP (No Operation) 
             //6'b111111: hame 0 mimoonan

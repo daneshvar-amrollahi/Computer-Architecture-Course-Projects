@@ -1,6 +1,7 @@
 module IFID(clk, rst, ld, flush, inst, adder1, inst_out, adder1_out);
     input clk, rst, flush;
     input [31:0] inst, adder1;
+    input ld;
 
     output reg [31:0] inst_out, adder1_out;
 

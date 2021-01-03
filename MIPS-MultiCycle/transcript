@@ -1,42 +1,48 @@
 # Loading project CA3
+# reading /home/daneshvar/intelFPGA/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CA4
+# Window cannot be closed because the modal window "Select files to add to project" is still open.
+# Window cannot be closed because the modal window "Select files to add to project" is still open.
+# Compile of adder_32b.v was successful.
 # Compile of alu.v was successful.
 # Compile of alu_controller.v was successful.
 # Compile of controller.v was successful.
-# Compile of datapath.v was successful.
-# Compile of memory.v was successful.
-# Compile of mips_multi_cycle.v was successful.
-# Compile of mips_tb.v was successful with warnings.
-# Compile of mux2to1_5b.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v failed with 1 errors.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v failed with 2 errors.
+# Compile of hazard_detection_unit.v failed with 6 errors.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v failed with 2 errors.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v failed with 2 errors.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v failed with 27 errors.
+# Compile of mux2to1_11b.v was successful.
 # Compile of mux2to1_32b.v was successful.
 # Compile of mux3to1_5b.v was successful.
-# Compile of mux4to1_32b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v failed with 1 errors.
 # Compile of reg_32b.v was successful.
 # Compile of reg_file.v was successful.
 # Compile of shl2_26b.v was successful.
 # Compile of shl2_32b.v was successful.
 # Compile of sign_ext.v was successful.
-# 16 compiles, 0 failed with no errors.
-vsim work.mips_tb
-# vsim work.mips_tb 
-# Start time: 22:32:01 on Dec 24,2020
-# Loading work.mips_tb
-# Loading work.mips_multi_cycle
-# Loading work.controller
-# Loading work.alu_controller
-# Loading work.datapath
-# Loading work.reg_32b
-# Loading work.mux2to1_32b
-# Loading work.mux3to1_5b
-# Loading work.reg_file
-# Loading work.sign_ext
-# Loading work.shl2_32b
-# Loading work.mux4to1_32b
-# Loading work.alu
-# Loading work.shl2_26b
-# Loading work.memory
-add wave sim:/mips_tb/*
-add wave sim:/mips_tb/*
-run -all
-# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
-#    Time: 20020 ns  Iteration: 0  Instance: /mips_tb
-# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# 25 compiles, 7 failed with 41 errors.
+# Compile of mips_pipeline.v was successful.
+# Compile of datapath.v failed with 1 errors.
+# Compile of datapath.v failed with 1 errors.
+# Compile of datapath.v was successful.
+# Compile of mux4to1_32b.v failed with 1 errors.
+# Compile of mux4to1_32b.v failed with 1 errors.
+# Compile of mux4to1_32b.v failed with 4 errors.
+# Compile of mux4to1_32b.v was successful.
+# Compile of forwarding_unit.v failed with 2 errors.
+# Compile of forwarding_unit.v was successful.
+# Compile of IFID.v failed with 2 errors.
+# Compile of IFID.v was successful.
+# Compile of hazard_detection_unit.v failed with 6 errors.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of MEMWB.v failed with 2 errors.
+# Compile of MEMWB.v failed with 2 errors.
+# Compile of MEMWB.v was successful.

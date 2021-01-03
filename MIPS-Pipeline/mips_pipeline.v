@@ -7,15 +7,40 @@ module mips_pipeline(clk,
                      data_in,
                      mem_write_to_data_mem,
                      mem_read_to_data_mem);
-
+    
     input clk, rst;
-    output [31:0] inst_adr; 
+    output [31:0] inst_adr;
     input [31:0] inst;
     output [31:0] data_adr;
     output [31:0] data_out;
     input [31:0] data_in;
     output mem_write_to_data_mem, mem_read_to_data_mem;
 
+    wire [1:0] reg_dst;
+    wire [1:0] mem_to_reg;
+    wire alu_src;
+    wire [1:0] pc_src;
+    wire [2:0] alu_ctrl;
+    wire reg_write;
+    wire flush;
+    wire mem_read;
+    wire mem_write;
+    wire [1:0] forwardA, forwardB;
+    wire pc_load;
+    wire IFID_Ld;
+    wire sel_signal;
+    wire [5:0] IFIDopcode_out;
+    wire [5:0] IFIDfunc_out;
+    wire zero_out;
+    wire operands_equal;
+    wire IDEX_mem_read;
+    wire [4:0] IDEX_Rt, IFID_Rt, IFID_Rs, IDEX_Rs;
+    wire EXMEM_reg_write;
+    wire [4:0] EXMEM_Rd;
+    wire MEMWB_reg_write;
+    wire [4:0] MEMWB_Rd;
+    
+    
     //datapath, control unit, forwarding unit, hazard unit
     datapath DP(clk,
     rst,
@@ -43,39 +68,31 @@ module mips_pipeline(clk,
     IFIDopcode_out, //output to controller
     IFIDfunc_out, //output to controller
     zero_out, //output to controller (not used)
-    operands_equal //output to controller
+    operands_equal, //output to controller
+    IDEX_mem_read,
+    IDEX_Rt,
+    IFID_Rt,
+    IFID_Rs,
+    IDEX_Rs,
+    EXMEM_reg_write, 
+    EXMEM_Rd, 
+    MEMWB_reg_write, 
+    MEMWB_Rd
     );
     
-    wire [1:0] reg_dst;
-    wire [1:0] mem_to_reg;
-    wire alu_src;
-    wire [1:0] pc_src;
-    wire [2:0] alu_ctrl;
-    wire reg_write;
-    wire flush;
-    wire mem_read;
-    wire mem_write;
-    wire [1:0] forwardA, forwardB;
-    wire pc_load;
-    wire IFID_Ld;
-    wire sel_signal;
-    wire [5:0] IFIDopcode_out;
-    wire [5:0] IFIDfunc_out;
-    wire zero_out;
-    wire operands_equal;
-
+    
     controller CU(IFIDopcode_out, //from dp
     IFIDfunc_out, //from dp
     zero_out, //from dp
-    reg_dst, 
-    mem_to_reg, 
-    reg_write, 
-    alu_src, 
-    mem_read, 
-    mem_write, 
-    pc_src, 
-    alu_ctrl, 
-    flush, 
+    reg_dst,
+    mem_to_reg,
+    reg_write,
+    alu_src,
+    mem_read,
+    mem_write,
+    pc_src,
+    alu_ctrl,
+    flush,
     operands_equal
     );
     

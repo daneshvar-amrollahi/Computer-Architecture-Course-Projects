@@ -1,0 +1,605 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle
+vadder_32b
+Z0 !s110 1609677287
+!i10b 1
+!s100 =lT4LQS`YHiSO0CCXY`3J1
+Ibh[8BVRcgOg`B<FY_0e^_0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline
+w1607382437
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1609677286.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+valu
+R0
+!i10b 1
+!s100 CVjX85SUfWY7Io1bQU2eC2
+I7JNjzZNkCKT^EUzmU55Mm1
+R1
+R2
+w1607638290
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z6 !s108 1609677287.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu.v|
+!i113 1
+R4
+R5
+valu_controller
+R0
+!i10b 1
+!s100 14>H^UV;A<eNmJRMngdBP0
+I`^mSW>lQ4oMD_?`Nf32T92
+R1
+R2
+w1609665796
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu_controller.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu_controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu_controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu_controller.v|
+!i113 1
+R4
+R5
+vcontroller
+R0
+!i10b 1
+!s100 E>:ab_UYTAh?@AVD_T;lG3
+I2`2<@H3CiUIJPzcagZonh2
+R1
+R2
+w1609676476
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v|
+!i113 1
+R4
+R5
+vdata_mem
+R0
+!i10b 1
+!s100 m<f:LS0LW2X4JzRo82V0f0
+IJU]KBUW]WR;N<@XgLZjni0
+R1
+R2
+w1607635371
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v
+L0 3
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v|
+!i113 1
+R4
+R5
+vdatapath
+!s110 1609677435
+!i10b 1
+!s100 9edc]1:1077VIJN]cETa70
+I8;8[Om;6<G?GcJ?DzS91Q2
+R1
+R2
+w1609677433
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1609677435.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v|
+!i113 1
+R4
+R5
+vEXMEM_ctrl
+R0
+!i10b 1
+!s100 Ce7Hg^;0Rj4o@`z1zUI<A3
+IjK@V27M>Im6X3<L^Ma6:F1
+R1
+R2
+Z7 w1609540731
+Z8 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/EXMEM.v
+Z9 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/EXMEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+Z10 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/EXMEM.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/EXMEM.v|
+!i113 1
+R4
+R5
+n@e@x@m@e@m_ctrl
+vEXMEM_datas
+R0
+!i10b 1
+!s100 EU=_7EMb;P@ej37BjbENn0
+I@3AX9XP?PDJeckXH:6zo80
+R1
+R2
+R7
+R8
+R9
+Z12 L0 28
+R3
+r1
+!s85 0
+31
+R6
+R10
+R11
+!i113 1
+R4
+R5
+n@e@x@m@e@m_datas
+vforward_unit
+!s110 1609677871
+!i10b 1
+!s100 ?k5kLC43kL]Ljc5_JOM?l1
+IR:dbTl2:8N^0HUe3k>TQ`0
+R1
+R2
+w1609677860
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1609677871.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v|
+!i113 1
+R4
+R5
+vhazard_detection_unit
+!s110 1609677919
+!i10b 1
+!s100 YdLz7A]_bm=dAHX87ZCJ[2
+IKPWLUDd:`bRYzL1?KoX>U1
+R1
+R2
+w1609677916
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1609677919.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v|
+!i113 1
+R4
+R5
+vIDEX_ctrl
+R0
+!i10b 1
+!s100 WhMo>SZW]D?>5E`GEnE<c3
+INH5`22hz21CKHbR7fRdhD1
+R1
+R2
+Z13 w1609540721
+Z14 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IDEX.v
+Z15 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IDEX.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+Z16 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IDEX.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IDEX.v|
+!i113 1
+R4
+R5
+n@i@d@e@x_ctrl
+vIDEX_datas
+R0
+!i10b 1
+!s100 GcOG5b7flkmJ17;U^5m`T3
+IR?j6P1=I2TUVNfL7bUKTc2
+R1
+R2
+R13
+R14
+R15
+R12
+R3
+r1
+!s85 0
+31
+R6
+R16
+R17
+!i113 1
+R4
+R5
+n@i@d@e@x_datas
+vIFID
+!s110 1609677903
+!i10b 1
+!s100 zN1nog9Ui3^i1zUoliNk:1
+IL110ANPXc9cOb`COlYC@d0
+R1
+R2
+w1609677894
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1609677903.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v|
+!i113 1
+R4
+R5
+n@i@f@i@d
+vinst_mem
+R0
+!i10b 1
+!s100 ]1D[oMcEXU:5K^BKc@M`V0
+IkdjNn^2hAX9VXFXEk;33H0
+R1
+R2
+w1608358613
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v|
+!i113 1
+R4
+R5
+vMEMWB_ctrl
+Z18 !s110 1609678015
+!i10b 1
+!s100 [ioz:W>^CEZ2NDcM_h@[h1
+IABbdR1_8kcLLacNd`R7ZT1
+R1
+R2
+Z19 w1609678006
+Z20 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v
+Z21 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z22 !s108 1609678015.000000
+Z23 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v|
+!i113 1
+R4
+R5
+n@m@e@m@w@b_ctrl
+vMEMWB_datas
+R18
+!i10b 1
+!s100 fTHI:@8@0kJQ?cQc=Nl962
+IjfZ_PQKKMTj^d7J356[KE2
+R1
+R2
+R19
+R20
+R21
+L0 21
+R3
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 1
+R4
+R5
+n@m@e@m@w@b_datas
+vmips_pipe_tb
+R0
+!i10b 1
+!s100 UITU4hX0YPagT<7ZGnOe:3
+I6nPbcjRb0PGT<o_Wd`hkm1
+R1
+R2
+w1609677130
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v|
+!i113 1
+R4
+R5
+vmips_pipeline
+!s110 1609677354
+!i10b 1
+!s100 PGm@a]BZM>PBSJF1WlOD[3
+Im?B:baF1c<<zb1zL<A1IL1
+R1
+R2
+w1609677346
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipeline.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipeline.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1609677354.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipeline.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipeline.v|
+!i113 1
+R4
+R5
+vmux2to1_11b
+R0
+!i10b 1
+!s100 V1N0<8k]`anO]0VO:Y`]J1
+Iim:7I]_Fd39ng8^5o8=P60
+R1
+R2
+w1609659247
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_11b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_11b.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_11b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_11b.v|
+!i113 1
+R4
+R5
+vmux2to1_32b
+R0
+!i10b 1
+!s100 zPEbJ[DSj?TlTEXDTN1g]3
+InC>oBCX^[m:LBckM7GT^33
+R1
+R2
+w1607382511
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_32b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_32b.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_32b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_32b.v|
+!i113 1
+R4
+R5
+vmux3to1_32b
+R0
+!i10b 1
+!s100 2Gjc8:al76icCPm3U9<gL3
+I4g>O[TGAi`b2l`Kn@Peo;0
+R1
+R2
+w1607382518
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_32b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_32b.v
+L0 2
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_32b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_32b.v|
+!i113 1
+R4
+R5
+vmux3to1_5b
+R0
+!i10b 1
+!s100 OhR0c0B@94TI5[?G<z4?Z3
+InS8FSOgaBNRQ?JQGk]g:M0
+R1
+R2
+w1607382515
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_5b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_5b.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_5b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_5b.v|
+!i113 1
+R4
+R5
+vmux4to1_32b
+!s110 1609677812
+!i10b 1
+!s100 :UJQOgT;1O_7SZMeUB7TZ2
+I_m?k:X3Je>5Ze;X72aHeH0
+R1
+R2
+w1609677792
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v
+L0 23
+R3
+r1
+!s85 0
+31
+!s108 1609677812.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v|
+!i113 1
+R4
+R5
+vreg_32b
+Z25 !s110 1609677288
+!i10b 1
+!s100 @K14fENHcB7zKgJ]aPVEc2
+I:UB[gY1[kz?=jQA:X8k741
+R1
+R2
+w1609508896
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_32b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_32b.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z26 !s108 1609677288.000000
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_32b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_32b.v|
+!i113 1
+R4
+R5
+vreg_file
+R25
+!i10b 1
+!s100 HQem24k?e3QnhA<_:VfZi3
+IPM^YondMW6<zNjAazoBXP1
+R1
+R2
+w1607382594
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_file.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_file.v
+L0 1
+R3
+r1
+!s85 0
+31
+R26
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_file.v|
+!i113 1
+R4
+R5
+vshl2_26b
+R25
+!i10b 1
+!s100 5_^jDlE<W?fOg=5n=mnP53
+Ia?=;Ke1nCHDa]5aL:]X>J1
+R1
+R2
+w1609508011
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_26b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_26b.v
+L0 1
+R3
+r1
+!s85 0
+31
+R26
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_26b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_26b.v|
+!i113 1
+R4
+R5
+vshl2_32b
+R25
+!i10b 1
+!s100 Vd^TPi`efBe:<L3zfSdng3
+Imh6^]^k[6lc;V3U=H8?iA2
+R1
+R2
+w1609507984
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_32b.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_32b.v
+L0 1
+R3
+r1
+!s85 0
+31
+R26
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_32b.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_32b.v|
+!i113 1
+R4
+R5
+vsign_ext
+R25
+!i10b 1
+!s100 Co;>B>RBIc8eMKYF0i1622
+Iz>cF4QCN4oC7aSC<k6T3D3
+R1
+R2
+w1609507867
+8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/sign_ext.v
+F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/sign_ext.v
+L0 1
+R3
+r1
+!s85 0
+31
+R26
+!s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/sign_ext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/sign_ext.v|
+!i113 1
+R4
+R5
