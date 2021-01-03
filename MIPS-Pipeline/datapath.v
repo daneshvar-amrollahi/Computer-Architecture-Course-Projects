@@ -24,7 +24,11 @@ module datapath (clk,
                  IFIDopcode_out, //output to controller
                  IFIDfunc_out, //output to controller
                  zero_out, //output to controller (not used)
-                 operands_equal //output to controller
+                 operands_equal, //output to controller
+                 IDEX_mem_read,
+                 IDEX_Rt,
+                 IFID_Rt,
+                 IFID_Rs,
                  );
     
     input  clk, rst;
@@ -38,7 +42,7 @@ module datapath (clk,
     input [1:0] pc_src;
     input  [2:0] alu_ctrl;
     input flush;    
-    input mem_read,mem_write; //from controller (check this with Helia: These were declared as outputs, I changed them to inputs. It happened hol holi when Negin called)
+    input mem_read,mem_write; 
     input [1:0] forwardA, forwardB;
     input pc_load;
     input IFID_Ld;
@@ -47,12 +51,12 @@ module datapath (clk,
     output [5:0] IFIDfunc_out;
     output zero_out;
     output operands_equal;
+    output IDEX_mem_read;
+    output [4:0] IDEX_Rt, IFID_Rt, IFID_Rs;
 
     output mem_read_to_data_mem, mem_write_to_data_mem;
 
 
-    //our signals coming from controller;
-    //slti;
     input [1:0] reg_dst;
 
     /////////////////////////////////////////////////
@@ -70,7 +74,8 @@ module datapath (clk,
 
     assign IFIDopcode_out = IFIDinst_out[31:26];
     assign IFIDfunc_out = IFIDinst_out[5:0];
-
+    assign IFID_Rt = IFIDinst_out[20:16];
+    assign IFID_Rs = IFIDinst_out[25:21];
 
     wire [31:0] adder2_out;
     wire [27:0] shl2_26b_out;
@@ -115,6 +120,8 @@ module datapath (clk,
     IDEX_datas IDEX_DATAS(clk, rst, read_data1, read_data2, sgn_ext_out, IFIDinst_out[20:16], IFIDinst_out[15:11], IFIDinst_out[25:21], IFIDadder1_out, 
         IDEX_read1_out, IDEX_read2_out, IDEX_sgn_ext_out, IDEX_Rt_out, IDEX_Rd_out, IDEX_Rs_out, IDEX_adder1_out);
     
+    assign IDEX_Rt = IDEX_RT_out;
+
 
     wire [2:0] IDEX_alu_ctrl_out;
     wire IDEX_reg_write_out;
@@ -139,6 +146,7 @@ module datapath (clk,
     IDEX_ctrl IDEX_CTRL(clk, rst, IDEX_alu_ctrl_in, IDEX_alu_src_in, IDEX_reg_write_in, IDEX_reg_dst_in, IDEX_mem_read_in, IDEX_mem_write_in, IDEX_mem_to_reg_in, //coming from controller (ke badan MUX bayad bezarim bade hazard unit)
                 IDEX_alu_ctrl_out, IDEX_alu_src_out, IDEX_reg_write_out, IDEX_reg_dst_out, IDEX_mem_read_out, IDEX_mem_write_out, IDEX_mem_to_reg_out);
 
+    assign IDEX_mem_read = IDEX_mem_read_out;
     //done togetherrrrr
 
     wire [4:0] mux5_out;
