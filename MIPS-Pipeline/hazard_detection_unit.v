@@ -9,7 +9,7 @@ module hazard_detection_unit(IDEX_mem_read, IDEX_Rt, IFID_Rs, IFID_Rt, sel_signa
         IFID_Ld <= 1'b1;
         pc_load <= 1'b1;
 
-        if (IDEX_mem_read && ((IDEX_Rt == IFID_Rs) || (IFID_Rt == IFID_Rt)) ) begin
+        if (IDEX_mem_read && ((IDEX_Rt == IFID_Rs) || (IDEX_Rt == IFID_Rt)) ) begin
             sel_signal <= 1'b0;
             IFID_Ld <= 1'b0; 
             pc_load <= 1'b0;
