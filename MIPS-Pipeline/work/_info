@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle
 vadder_32b
-Z0 !s110 1609684532
+Z0 !s110 1609765607
 !i10b 1
 !s100 =lT4LQS`YHiSO0CCXY`3J1
 Ibh[8BVRcgOg`B<FY_0e^_0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1609684532.000000
+Z4 !s108 1609765607.000000
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v|
 !i113 1
@@ -78,7 +78,7 @@ R0
 I2`2<@H3CiUIJPzcagZonh2
 R1
 R2
-w1609676476
+w1609762138
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v
 L0 1
@@ -116,11 +116,11 @@ R6
 vdatapath
 R0
 !i10b 1
-!s100 7Cd3@ZTm`cC5Lz:MEMJL?3
-I=g70YHPDYC3GOVY;WAG3<0
+!s100 @KP=3nHfXl`FG3H@7<B402
+IhHcX?k]n7]>MN6Yg;ii9]0
 R1
 R2
-w1609679898
+w1609757855
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v
 L0 1
@@ -179,7 +179,7 @@ R5
 R6
 n@e@x@m@e@m_datas
 vforward_unit
-Z13 !s110 1609684533
+Z13 !s110 1609765608
 !i10b 1
 !s100 ?k5kLC43kL]Ljc5_JOM?l1
 IR:dbTl2:8N^0HUe3k>TQ`0
@@ -193,7 +193,7 @@ R3
 r1
 !s85 0
 31
-Z14 !s108 1609684533.000000
+R4
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v|
 !i113 1
@@ -214,7 +214,7 @@ R3
 r1
 !s85 0
 31
-R14
+Z14 !s108 1609765608.000000
 !s107 /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v|
 !i113 1
@@ -267,11 +267,11 @@ n@i@d@e@x_datas
 vIFID
 R13
 !i10b 1
-!s100 zN1nog9Ui3^i1zUoliNk:1
-IL110ANPXc9cOb`COlYC@d0
+!s100 HcPPfN0K6PUN>S2UQaQKO1
+Ig;1>dfZVZnl6b2NjWKVAX1
 R1
 R2
-w1609678263
+w1609762221
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v
 L0 1
@@ -289,11 +289,11 @@ n@i@f@i@d
 vinst_mem
 R13
 !i10b 1
-!s100 ]1D[oMcEXU:5K^BKc@M`V0
-IkdjNn^2hAX9VXFXEk;33H0
+!s100 W3S<[4ALliWUNa17B9h3n0
+IP?Ba1VB7mol9:FkLXYMNa2
 R1
 R2
-w1608358613
+w1609748528
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v
 L0 2
@@ -354,11 +354,11 @@ n@m@e@m@w@b_datas
 vmips_pipe_tb
 R13
 !i10b 1
-!s100 3=AP^aR7;`hkHn;VbWGnj2
-If<a>m6NoSf`6dRMFdN3Rz3
+!s100 h[JdK@722f10P5[AQ^[742
+I91Q=g9jPQbcm7e_l^HV=g1
 R1
 R2
-w1609678154
+w1609754441
 8/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v
 F/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v
 L0 2

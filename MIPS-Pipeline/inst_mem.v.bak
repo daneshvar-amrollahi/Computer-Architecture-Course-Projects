@@ -10,7 +10,7 @@ module inst_mem (adr,
     initial
     begin
         
-        $readmemb("instMin20.mem", mem);
+        $readmemb("inst20_8b.mem", mem);
         //$readmemb("instSLTi_8b.mem", mem);
         //$readmemb("instructionsJR.mem", mem);
     end

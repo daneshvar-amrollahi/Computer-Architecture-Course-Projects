@@ -19,7 +19,7 @@ module mips_pipe_tb();
         rst     = 1'b1;
         clk     = 1'b0;
         #20 rst = 1'b0;
-        #5000 $stop;
+        #20000 $stop;
     end
     
     always

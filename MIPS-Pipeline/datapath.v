@@ -109,7 +109,8 @@ module datapath (clk,
     wire [31:0] mux6_out;
     wire [4:0] MEMWB_mux5_out;
     wire [31:0] read_data2;
-    reg_file RF(mux6_out, IFIDinst_out[25:21], IFIDinst_out[20:16], MEMWB_mux5_out, reg_write, rst, clk, read_data1, read_data2);
+    wire MEMWB_reg_write_out;
+    reg_file RF(mux6_out, IFIDinst_out[25:21], IFIDinst_out[20:16], MEMWB_mux5_out, MEMWB_reg_write_out, rst, clk, read_data1, read_data2);
 
     assign operands_equal = (read_data1 == read_data2);
     ////////////////////////////////////////////////////
@@ -211,7 +212,6 @@ module datapath (clk,
     //WB
 
     wire [1:0] MEMWB_mem_to_reg_out;
-    wire MEMWB_reg_write_out;
     MEMWB_ctrl MEMWB_CTRL(clk, rst, EXMEM_mem_to_reg_out, EXMEM_reg_write_out, 
         MEMWB_mem_to_reg_out, MEMWB_reg_write_out);
 

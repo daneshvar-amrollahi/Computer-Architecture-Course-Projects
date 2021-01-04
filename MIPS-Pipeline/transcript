@@ -1,0 +1,1389 @@
+# Loading project CA4
+# Compile of mux4to1_32b.v was successful.
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+vsim work.mips_pipe_tb
+# vsim work.mips_pipe_tb 
+# Start time: 11:52:23 on Jan 04,2021
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+add wave sim:/mips_pipe_tb/*
+run -all
+# The content of mem[2000] =         36
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+vsim work.mips_pipe_tb
+# End time: 11:54:13 on Jan 04,2021, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 0
+# vsim work.mips_pipe_tb 
+# Start time: 11:54:13 on Jan 04,2021
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+add wave sim:/mips_pipe_tb/*
+add wave sim:/mips_pipe_tb/CPU/DP/*
+run -all
+# The content of mem[2000] =         36
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# WARNING: No extended dataflow license exists
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+restart -f
+run -all
+# The content of mem[2000] =         27
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =         27
+# The content of mem[2004] =          1
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =         27
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =       1024
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =       1024
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+restart -f
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+restart -f
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v failed with 1 errors.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v failed with 1 errors.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 1 failed with 1 error.
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =         27
+# The content of mem[2004] =          1
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of EXMEM.v was successful.
+# Compile of forwarding_unit.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# Compile of IDEX.v was successful.
+# Compile of IFID.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of MEMWB.v was successful.
+# Compile of mips_pipe_tb.v was successful.
+# Compile of mips_pipeline.v was successful.
+# Compile of mux2to1_11b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 25 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_pipe_tb
+# Loading work.mips_pipeline
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.IFID
+# Loading work.mux4to1_32b
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.shl2_26b
+# Loading work.reg_file
+# Loading work.IDEX_datas
+# Loading work.mux2to1_11b
+# Loading work.IDEX_ctrl
+# Loading work.mux3to1_5b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_32b
+# Loading work.alu
+# Loading work.EXMEM_datas
+# Loading work.EXMEM_ctrl
+# Loading work.MEMWB_ctrl
+# Loading work.MEMWB_datas
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.hazard_detection_unit
+# Loading work.forward_unit
+# Loading work.inst_mem
+# Loading work.data_mem
+run -all
+# The content of mem[2000] =          x
+# The content of mem[2004] =          x
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v(22)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_pipe_tb
+# Break in Module mips_pipe_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v line 22
