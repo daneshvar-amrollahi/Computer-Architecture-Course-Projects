@@ -1,0 +1,183 @@
+{/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_file.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_file.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu_controller.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu_controller.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2to1_32b
+
+Top level modules:
+	mux2to1_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipeline.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipeline.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mips_pipeline
+
+Top level modules:
+	mips_pipeline
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/datapath.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux4to1_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux4to1_32b
+
+Top level modules:
+	mux4to1_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v} {2 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: /home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/data_mem.v(2): (vlog-2283) Extra semicolon in $unit (global) scope.
+-- Compiling module data_mem
+
+Top level modules:
+	data_mem
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/sign_ext.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/sign_ext.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sign_ext
+
+Top level modules:
+	sign_ext
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/alu.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/forwarding_unit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module forward_unit
+
+Top level modules:
+	forward_unit
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IDEX.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IDEX.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module IDEX_ctrl
+-- Compiling module IDEX_datas
+
+Top level modules:
+	IDEX_ctrl
+	IDEX_datas
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_11b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux2to1_11b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2to1_11b
+
+Top level modules:
+	mux2to1_11b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mips_pipe_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mips_pipe_tb
+
+Top level modules:
+	mips_pipe_tb
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/IFID.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module IFID
+
+Top level modules:
+	IFID
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/reg_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module reg_32b
+
+Top level modules:
+	reg_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/EXMEM.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/EXMEM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module EXMEM_ctrl
+-- Compiling module EXMEM_datas
+
+Top level modules:
+	EXMEM_ctrl
+	EXMEM_datas
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/inst_mem.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module inst_mem
+
+Top level modules:
+	inst_mem
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/adder_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder_32b
+
+Top level modules:
+	adder_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/hazard_detection_unit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module hazard_detection_unit
+
+Top level modules:
+	hazard_detection_unit
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shl2_32b
+
+Top level modules:
+	shl2_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_32b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_32b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux3to1_32b
+
+Top level modules:
+	mux3to1_32b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_5b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/mux3to1_5b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux3to1_5b
+
+Top level modules:
+	mux3to1_5b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/MEMWB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MEMWB_ctrl
+-- Compiling module MEMWB_datas
+
+Top level modules:
+	MEMWB_ctrl
+	MEMWB_datas
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_26b.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/shl2_26b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shl2_26b
+
+Top level modules:
+	shl2_26b
+
+} {} {}} {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v} {1 {vlog -work work -stats=none {/home/daneshvar/Desktop/Computer Architecture/MIPS-Pipeline/controller.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}}

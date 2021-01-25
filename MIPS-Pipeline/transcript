@@ -1,0 +1,276 @@
+# Loading project CA4
+# reading /home/daneshvar/intelFPGA/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CA2
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of mips_single_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of sign_ext.v was successful.
+# Compile of sign_ext_10b.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim work.mips_tb
+# vsim work.mips_tb 
+# Start time: 09:22:55 on Jan 12,2021
+# Loading work.mips_tb
+# Loading work.mips_single_cycle
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.mux3to1_5b
+# Loading work.mux3to1_32b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.mux2to1_32b
+# Loading work.alu
+# Loading work.shl2
+# Loading work.shl2_26b
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.inst_mem
+# Loading work.data_mem
+add wave sim:/mips_tb/*
+run -all
+# The content of mem[2000] =          0
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/CA2/mips_tb.v(21)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/CA2/mips_tb.v line 21
+vsim work.mips_tb
+# End time: 09:23:25 on Jan 12,2021, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0
+# vsim work.mips_tb 
+# Start time: 09:23:25 on Jan 12,2021
+# Loading work.mips_tb
+# Loading work.mips_single_cycle
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.mux3to1_5b
+# Loading work.mux3to1_32b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.mux2to1_32b
+# Loading work.alu
+# Loading work.shl2
+# Loading work.shl2_26b
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.inst_mem
+# Loading work.data_mem
+add wave sim:/mips_tb/*
+run -all
+# The content of mem[2000] =          0
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/CA2/mips_tb.v(21)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/CA2/mips_tb.v line 21
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of mips_single_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of sign_ext.v was successful.
+# Compile of sign_ext_10b.v was successful.
+# 19 compiles, 0 failed with no errors.
+# End time: 09:27:17 on Jan 12,2021, Elapsed time: 0:03:52
+# Errors: 0, Warnings: 0
+# Closing project /home/daneshvar/Desktop/Computer Architecture/MIPS-SingleCycle/CA2.mpf
+# reading /home/daneshvar/intelFPGA/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CA2
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of mips_single_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of sign_ext.v was successful.
+# Compile of sign_ext_10b.v was successful.
+# 19 compiles, 0 failed with no errors.
+# reading /home/daneshvar/intelFPGA/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CA3
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of mips_multi_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.mips_tb
+# vsim work.mips_tb 
+# Start time: 09:28:06 on Jan 12,2021
+# Loading work.mips_tb
+# Loading work.mips_multi_cycle
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_5b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.mux4to1_32b
+# Loading work.alu
+# Loading work.shl2_26b
+# Loading work.memory
+run -all
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of memory.v was successful.
+# Compile of mips_multi_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux4to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of shl2_32b.v was successful.
+# Compile of sign_ext.v was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# Loading work.mips_tb
+# Loading work.mips_multi_cycle
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.mux2to1_32b
+# Loading work.mux3to1_5b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.shl2_32b
+# Loading work.mux4to1_32b
+# Loading work.alu
+# Loading work.shl2_26b
+# Loading work.memory
+add wave sim:/mips_tb/*
+run -all
+# ** Note: $stop    : /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v(35)
+#    Time: 20020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/mips_tb.v line 35
+# End time: 09:29:41 on Jan 12,2021, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 0
+# Closing project /home/daneshvar/Desktop/Computer Architecture/MIPS-MultiCycle/CA3.mpf
+# reading /home/daneshvar/intelFPGA/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project CA2
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of mips_single_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of sign_ext.v was successful.
+# Compile of sign_ext_10b.v was successful.
+# 19 compiles, 0 failed with no errors.
+# Compile of adder_32b.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_controller.v was successful.
+# Compile of controller.v was successful.
+# Compile of data_mem.v was successful with warnings.
+# Compile of datapath.v was successful.
+# Compile of inst_mem.v was successful.
+# Compile of mips_single_cycle.v was successful.
+# Compile of mips_tb.v was successful with warnings.
+# Compile of mux2to1_5b.v was successful.
+# Compile of mux2to1_32b.v was successful.
+# Compile of mux3to1_5b.v was successful.
+# Compile of mux3to1_32b.v was successful.
+# Compile of reg_32b.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of shl2.v was successful.
+# Compile of shl2_26b.v was successful.
+# Compile of sign_ext.v was successful.
+# Compile of sign_ext_10b.v was successful.
+# 19 compiles, 0 failed with no errors.
+vsim work.mips_tb
+# vsim work.mips_tb 
+# Start time: 09:30:41 on Jan 12,2021
+# Loading work.mips_tb
+# Loading work.mips_single_cycle
+# Loading work.datapath
+# Loading work.reg_32b
+# Loading work.adder_32b
+# Loading work.mux3to1_5b
+# Loading work.mux3to1_32b
+# Loading work.reg_file
+# Loading work.sign_ext
+# Loading work.mux2to1_32b
+# Loading work.alu
+# Loading work.shl2
+# Loading work.shl2_26b
+# Loading work.controller
+# Loading work.alu_controller
+# Loading work.inst_mem
+# Loading work.data_mem
+add wave sim:/mips_tb/*
+# Load canceled
+run -all
+# The content of mem[2000] =          0
+# The content of mem[2004] =          0
+# ** Note: $stop    : /home/daneshvar/Desktop/CA2/mips_tb.v(21)
+#    Time: 5020 ns  Iteration: 0  Instance: /mips_tb
+# Break in Module mips_tb at /home/daneshvar/Desktop/CA2/mips_tb.v line 21
